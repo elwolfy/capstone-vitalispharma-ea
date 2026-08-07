@@ -9,19 +9,40 @@ mediante el plugin **coArchi**. Aquí practicaremos las tres operaciones del tra
 
 ---
 
+## Caso de estudio
+
+El caso completo del proyecto —**contexto de la empresa, modelo de negocio, interesados, normas y
+regulaciones aplicables, panorama de sistemas, retos y objetivos**— está en:
+
+**➡ [CASO_VitalisPharma_Internacional.md](CASO_VitalisPharma_Internacional.md)**
+
+Ese documento incluye además una **serie de ejercicios** para que cada estudiante **genere sus propios
+scripts ArchiMate** (con una chuleta de la API jArchi). Sigue una **plantilla reutilizable**: la misma
+estructura se usa para el caso **Banco Digital Aurora** del curso **CD-02 · Arquitectura de Negocio con BIZBOK**.
+
+**Resumen del caso:** VitalisPharma Internacional es un laboratorio farmacéutico multinacional (sede en Lima;
+operación en 8 países; exporta a EE. UU. y Europa) que integra investigación/registro, **manufactura**
+(sólidos orales y biológicos refrigerados) y **distribución internacional**. Enfrenta exigencias de
+cumplimiento (GMP/GDP, serialización DSCSA/FMD, cadena de frío, integridad de datos) y ejecuta un programa
+de transformación digital a 3 años. El alcance del Capstone es el segmento *"del lote fabricado al producto
+entregado y trazado"*.
+
+---
+
 ## 1. Requisitos previos
 
 | Herramienta | Para qué |
 |---|---|
 | Archi | Modelado ArchiMate — https://www.archimatetool.com/download |
+| jArchi | Ejecutar los scripts `.ajs` (se instala dentro de Archi) |
 | coArchi | Colaboración Git de modelos (se instala dentro de Archi) |
 | Cuenta GitHub | Alojar el repositorio — https://github.com |
 | Personal Access Token (PAT) | Autenticación al hacer push/pull (ver §5) |
 
-### Instalar coArchi en Archi
+### Instalar coArchi / jArchi en Archi
 1. Abra Archi -> menu **Help > Manage Plug-ins... > Install New**.
-2. Seleccione el archivo `.archiplugin` de coArchi (descarguelo desde su pagina de releases) e instale.
-3. Reinicie Archi. Active la vista **Collaboration** (Window > Perspective).
+2. Seleccione el archivo `.archiplugin` del plugin e instale.
+3. Reinicie Archi. Active la vista **Collaboration** (coArchi) y el menu **Scripts** (jArchi).
 
 ---
 
@@ -34,7 +55,7 @@ mediante el plugin **coArchi**. Aquí practicaremos las tres operaciones del tra
 4. Ingrese su **usuario de GitHub** y, como contrasena, su **Personal Access Token** (ver §5).
 5. Elija una carpeta local. Archi descargara el modelo y lo abrira.
 
-> El modelo inicial contiene la **Vista de Motivacion (Fase A)** de VitalisPharma.
+> El modelo inicial contiene las vistas de **Motivacion**, **Capacidades (L1/L2)** y **Estrategica**.
 
 ---
 
@@ -48,17 +69,23 @@ mediante el plugin **coArchi**. Aquí practicaremos las tres operaciones del tra
 
 **Flujo recomendado en clase**
 1. **Actualizar (Refresh)** -> parto de la ultima version.
-2. Editar el modelo en Archi.
-3. **Commit** -> describo mi cambio (p. ej. *"Agrego meta de trazabilidad"*).
+2. Editar el modelo en Archi (o ejecutar un script jArchi).
+3. **Commit** -> describo mi cambio.
 4. **Sincronizar (Publish)** -> comparto con el equipo.
 
 > Regla de oro: **Actualizar antes de editar** y **Sincronizar al terminar**. Asi se evitan conflictos.
 
 ---
 
-## 4. Resolucion de conflictos
-- Si dos personas editan lo mismo, coArchi avisa y permite elegir "mio" / "de ellos" o combinar.
-- Para practicar sin riesgo: cada estudiante trabaja en una **vista propia** dentro del modelo.
+## 4. Scripts jArchi incluidos (carpeta scripts/)
+
+| Script | Vista que genera |
+|---|---|
+| `Capstone_VitalisPharma_Vista_Motivacion.ajs` | Vista de Motivacion (Fase A) por columnas |
+| `Capstone_VitalisPharma_Vista_Capacidades.ajs` | Mapa de Capacidades Nivel 1 y Nivel 2 (Fase B) |
+| `Capstone_VitalisPharma_Vista_Estrategica.ajs` | Vista Estrategica: Iniciativas > Capacidades > Resultados > Metas |
+
+Ejecucion: menu **Scripts** en Archi, con el modelo Capstone seleccionado en el arbol.
 
 ---
 
@@ -73,12 +100,12 @@ GitHub ya no acepta contrasena para git por HTTPS; se usa un token.
 ## Estructura del repositorio
 ```
 capstone-vitalispharma-ea/
-|- README.md                         <- esta guia (estudiantes)
-|- GUIA_INSTRUCTOR.md                <- preparacion del repo y publicacion inicial
+|- README.md                              <- esta guia (estudiantes)
+|- CASO_VitalisPharma_Internacional.md    <- dossier del caso + ejercicios + chuleta jArchi
+|- GUIA_INSTRUCTOR.md                     <- preparacion del repo y publicacion inicial
 |- .gitignore
-|- scripts/
-|   \- Capstone_VitalisPharma_Vista_Motivacion.ajs   <- genera el modelo inicial (jArchi)
-\- model/                            <- lo crea coArchi al publicar el modelo
+|- scripts/                               <- scripts jArchi de referencia
+\- model/                                 <- lo crea coArchi al publicar el modelo
 ```
 
 ---
