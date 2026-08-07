@@ -1,0 +1,200 @@
+/*
+ * ============================================================================
+ *  Capstone TOGAF 10 - VitalisPharma Internacional
+ *  Vista: MAPA DE CAPACIDADES DE NEGOCIO - Nivel 1 y Nivel 2 (Fase B del ADM)
+ *  ----------------------------------------------------------------------------
+ *  - Tres franjas: ESTRATEGICA, MISIONAL (CORE), HABILITADORA.
+ *  - Capacidades de Nivel 1 (L1) que contienen sus sub-capacidades Nivel 2 (L2).
+ *  - NO se dibujan objetos de negocio; se MENCIONAN en la descripcion (documentacion)
+ *    de cada capacidad L2 (pestana Properties > Documentation).
+ *  - Se incluyen todas las L2 necesarias para lograr los resultados esperados
+ *    (Outcomes) de la vista de Motivacion; cada L2 relevante lo indica: "(Resultado: ...)".
+ *
+ *  SUGERENCIA: tenga SELECCIONADO el modelo Capstone en el arbol antes de ejecutar.
+ * ============================================================================
+ */
+
+console.show();
+console.clear();
+console.log("Generando el Mapa de Capacidades L1/L2 (3 franjas)...");
+
+try {
+
+  var VIEW_NAME = "B - Capacidades de Negocio L1-L2 (VitalisPharma)";
+
+  // --- Usar el modelo SELECCIONADO -----------------------------------------
+  var m = (typeof model !== "undefined" && model) ? model : null;
+  var nuevo = false;
+  if (!m) {
+    try {
+      var loaded = $.model.getLoadedModels();
+      for (var i = 0; i < loaded.length; i++)
+        if ((loaded[i].name || "").indexOf("VitalisPharma") >= 0) { m = loaded[i]; break; }
+    } catch (e) {}
+    if (!m) { m = $.model.create("Capstone - VitalisPharma Internacional"); nuevo = true; }
+  }
+  console.log("Modelo destino: " + m.name + (nuevo ? " (nuevo)" : " (seleccionado)"));
+
+  // Si ya existe una vista con este nombre, se elimina (actualizar limpio)
+  try { $(m).find("view").each(function (v) { if (v.name === VIEW_NAME) v.delete(); }); } catch (e) {}
+
+  var view = m.createArchimateView(VIEW_NAME);
+
+  // --- Layout --------------------------------------------------------------
+  var CAPW = 260, GAPX = 25, GAPY = 30, MAXCOL = 4;
+  var L2W = 240, L2H = 36, L2GAP = 8, L2_Y0 = 46;
+  var GRP_X = 20, TOPPAD = 44, BOTPAD = 20;
+  var GRP_W = 40 + MAXCOL * CAPW + (MAXCOL - 1) * GAPX;
+  var bandFills = ["#CFE6EA", "#E3F1F2", "#ECECEC"];
+
+  function capHeight(cap) {
+    var n = (cap.subs ? cap.subs.length : 0);
+    return 52 + 44 * n;   // 46 + n*(L2H+L2GAP) - L2GAP + 14
+  }
+
+  function makeL1(grp, rx, ry, cap) {
+    var c = m.createElement("capability", cap.name);
+    if (cap.doc) c.documentation = cap.doc;
+    var cObj = grp.add(c, rx, ry, CAPW, capHeight(cap));
+    if (cap.subs) {
+      for (var k = 0; k < cap.subs.length; k++) {
+        var s = m.createElement("capability", cap.subs[k].name);
+        if (cap.subs[k].doc) s.documentation = cap.subs[k].doc;
+        cObj.add(s, 10, L2_Y0 + k * (L2H + L2GAP), L2W, L2H);
+        // Descomposicion L1 -> L2 (aggregation entre capacidades es valida)
+        m.createRelationship("aggregation-relationship", "", c, s);
+      }
+    }
+    return cObj;
+  }
+
+  // --- Datos: L1 con sus L2 (objetos mencionados en la descripcion) --------
+  var bands = [
+    { name: "ESTRATEGICA", caps: [
+      { name: "Gestion Estrategica y de Portafolio", doc: "Dirige la estrategia corporativa y el portafolio de productos y proyectos.", subs: [
+        { name: "Planeamiento Estrategico", doc: "Define objetivos y hoja de ruta corporativa. Objetos de negocio: Plan Estrategico." },
+        { name: "Gestion de Portafolio de Productos", doc: "Prioriza productos y proyectos. Objetos de negocio: Portafolio de Productos." }
+      ]},
+      { name: "Gestion de Innovacion e I+D", doc: "Investiga y desarrolla productos y procesos.", subs: [
+        { name: "Investigacion y Desarrollo", doc: "Ejecuta proyectos de I+D. Objetos de negocio: Proyecto de I+D." },
+        { name: "Gestion de Propiedad Intelectual", doc: "Protege patentes y propiedad intelectual. Objetos de negocio: Patente / PI." }
+      ]},
+      { name: "Gestion Regulatoria y de Cumplimiento", doc: "Asegura autorizaciones sanitarias y el cumplimiento GMP/GDP.", subs: [
+        { name: "Registro Sanitario Internacional", doc: "Registra productos ante autoridades de cada pais. Objetos de negocio: Dossier de Registro, Licencia Sanitaria. (Resultado: cobertura internacional +3 paises; auditorias aprobadas)." },
+        { name: "Gestion de Cumplimiento GMP/GDP", doc: "Mantiene el cumplimiento de buenas practicas de manufactura y distribucion. Objetos de negocio: Reporte Regulatorio. (Resultado: auditorias regulatorias aprobadas sin observaciones)." },
+        { name: "Gestion de Auditorias e Inspecciones", doc: "Prepara y atiende auditorias e inspecciones. Objetos de negocio: Informe de Auditoria. (Resultado: auditorias aprobadas sin observaciones)." }
+      ]}
+    ]},
+    { name: "MISIONAL (CORE)", caps: [
+      { name: "Desarrollo y Registro de Productos", doc: "Formula, escala y prepara el registro de productos.", subs: [
+        { name: "Formulacion y Desarrollo Farmaceutico", doc: "Formula y desarrolla el producto. Objetos de negocio: Especificacion de Producto." },
+        { name: "Escalamiento y Transferencia Tecnologica", doc: "Escala a produccion industrial. Objetos de negocio: Protocolo de Escalamiento." }
+      ]},
+      { name: "Manufactura de Medicamentos", doc: "Produce medicamentos conforme a GMP.", subs: [
+        { name: "Planificacion de Produccion", doc: "Programa ordenes de fabricacion. Objetos de negocio: Orden de Fabricacion." },
+        { name: "Produccion de Solidos Orales", doc: "Fabrica solidos orales. Objetos de negocio: Lote de Produccion." },
+        { name: "Produccion de Biologicos (Refrigerados)", doc: "Fabrica biologicos con cadena de frio. Objetos de negocio: Lote Biologico." }
+      ]},
+      { name: "Gestion de Calidad (QA/QC)", doc: "Controla y asegura la calidad del producto y los procesos.", subs: [
+        { name: "Control de Calidad (QC)", doc: "Analiza y ensaya muestras. Objetos de negocio: Certificado de Analisis. (Resultado: tiempo de liberacion de producto -40%)." },
+        { name: "Aseguramiento y Liberacion (QA Release)", doc: "Libera lotes al mercado. Objetos de negocio: Liberacion de Lote. (Resultado: tiempo de liberacion -40%)." },
+        { name: "Gestion de Desviaciones y CAPA", doc: "Gestiona desviaciones y acciones correctivas/preventivas. Objetos de negocio: Desviacion / CAPA. (Resultado: auditorias aprobadas)." }
+      ]},
+      { name: "Serializacion y Trazabilidad", doc: "Serializa el producto y lo traza extremo a extremo.", subs: [
+        { name: "Serializacion de Producto (GS1)", doc: "Asigna identidad unica a cada unidad. Objetos de negocio: Producto Serializado. (Resultado: trazabilidad 100% de lotes exportados)." },
+        { name: "Trazabilidad y Genealogia de Lote", doc: "Registra la genealogia y el rastro del lote. Objetos de negocio: Evento de Trazabilidad. (Resultado: trazabilidad 100%; recall < 24 h)." },
+        { name: "Gestion de Recall / Retiro", doc: "Ejecuta retiros de producto del mercado. Objetos de negocio: Orden de Recall. (Resultado: tiempo de recall/retiro < 24 h)." }
+      ]},
+      { name: "Gestion de Cadena de Suministro", doc: "Planifica abastecimiento e inventario.", subs: [
+        { name: "Planificacion de Demanda", doc: "Pronostica la demanda. Objetos de negocio: Pronostico de Demanda. (Resultado: quiebres de stock -25%)." },
+        { name: "Planificacion de Abastecimiento (S&OP)", doc: "Equilibra oferta y demanda. Objetos de negocio: Plan de Abastecimiento. (Resultado: quiebres -25%)." },
+        { name: "Gestion de Inventario Multi-pais", doc: "Controla inventario unificado por pais. Objetos de negocio: Inventario / Stock. (Resultado: quiebres -25%; visibilidad de inventario en tiempo real)." }
+      ]},
+      { name: "Distribucion y Logistica", doc: "Distribuye con control de cadena de frio a CEDIS y clientes.", subs: [
+        { name: "Gestion de Almacenes y CEDIS", doc: "Opera almacenes y centros de distribucion. Objetos de negocio: Stock en CEDIS." },
+        { name: "Gestion de Transporte y Cadena de Frio", doc: "Transporta con control termico. Objetos de negocio: Registro de Cadena de Frio. (Resultado: mermas por cadena de frio -30%)." },
+        { name: "Monitoreo IoT de Temperatura", doc: "Monitorea la temperatura en tiempo real. Objetos de negocio: Lectura de Sensor / Alerta. (Resultado: mermas -30%)." },
+        { name: "Exportacion y Comercio Internacional", doc: "Gestiona exportaciones y comercio exterior. Objetos de negocio: Documento de Exportacion. (Resultado: cobertura internacional +3 paises)." }
+      ]},
+      { name: "Gestion Comercial y de Clientes", doc: "Gestiona ventas, pedidos y la relacion con clientes.", subs: [
+        { name: "Gestion de Pedidos", doc: "Procesa y da seguimiento a pedidos. Objetos de negocio: Pedido de Cliente." },
+        { name: "Gestion de Clientes y Distribuidores", doc: "Administra la relacion comercial. Objetos de negocio: Cliente." }
+      ]}
+    ]},
+    { name: "HABILITADORA", caps: [
+      { name: "Gestion Financiera", doc: "Planifica y controla las finanzas.", subs: [
+        { name: "Planeamiento y Control Financiero", doc: "Presupuesto y control de gestion. Objetos de negocio: Presupuesto." },
+        { name: "Cuentas y Facturacion", doc: "Cuentas por cobrar/pagar y facturacion. Objetos de negocio: Factura." }
+      ]},
+      { name: "Gestion de Talento Humano", doc: "Gestiona el ciclo de vida del talento.", subs: [
+        { name: "Gestion del Talento", doc: "Reclutamiento, desarrollo y desempeno. Objetos de negocio: Legajo de Empleado." }
+      ]},
+      { name: "Gestion de TI y Datos", doc: "Provee plataformas, datos e integracion.", subs: [
+        { name: "Gestion de Datos Maestros", doc: "Administra datos maestros unicos. Objetos de negocio: Dato Maestro. (Resultado: visibilidad de inventario en tiempo real)." },
+        { name: "Integracion de Sistemas (MES-WMS-ERP)", doc: "Integra los sistemas core. Objetos de negocio: Interfaz / Servicio. (Resultado: visibilidad de inventario en tiempo real)." },
+        { name: "Servicios y Plataforma TI", doc: "Opera plataformas y servicios de TI. Objetos de negocio: Catalogo de Servicios TI." }
+      ]},
+      { name: "Gestion de Infraestructura y Activos", doc: "Administra plantas, equipos y activos.", subs: [
+        { name: "Gestion de Plantas y Equipos", doc: "Mantiene los activos productivos. Objetos de negocio: Activo / Equipo." }
+      ]},
+      { name: "Compras y Proveedores", doc: "Califica proveedores y gestiona compras.", subs: [
+        { name: "Calificacion de Proveedores", doc: "Evalua y califica proveedores. Objetos de negocio: Proveedor Calificado." },
+        { name: "Gestion de Compras", doc: "Ejecuta compras y contratos. Objetos de negocio: Contrato de Proveedor." }
+      ]}
+    ]}
+  ];
+
+  // --- Titulo --------------------------------------------------------------
+  var title = view.createObject("note", GRP_X, 10, 820, 40);
+  title.text = "Mapa de Capacidades de Negocio (Nivel 1 y Nivel 2) - VitalisPharma (Fase B)";
+  title.fillColor = "#04353D"; title.fontColor = "#FFFFFF"; title.textAlignment = 2;
+
+  // --- Construir franjas con filas de altura variable ----------------------
+  var y = 70;
+  for (var b = 0; b < bands.length; b++) {
+    var caps = bands[b].caps;
+    var numRows = Math.ceil(caps.length / MAXCOL);
+
+    // altura de cada fila = maxima altura de sus capacidades
+    var rowH = [];
+    for (var r = 0; r < numRows; r++) {
+      var mh = 0;
+      for (var c = 0; c < MAXCOL; c++) {
+        var idx = r * MAXCOL + c;
+        if (idx < caps.length) mh = Math.max(mh, capHeight(caps[idx]));
+      }
+      rowH.push(mh);
+    }
+    var sumRows = 0; for (var q = 0; q < rowH.length; q++) sumRows += rowH[q];
+    var bandH = TOPPAD + sumRows + (numRows - 1) * GAPY + BOTPAD;
+
+    var grp = view.createObject("group", GRP_X, y, GRP_W, bandH);
+    grp.name = bands[b].name;
+    grp.fillColor = bandFills[b];
+
+    var rowY = TOPPAD;
+    for (var r2 = 0; r2 < numRows; r2++) {
+      for (var c2 = 0; c2 < MAXCOL; c2++) {
+        var idx2 = r2 * MAXCOL + c2;
+        if (idx2 < caps.length) {
+          var rx = 20 + c2 * (CAPW + GAPX);
+          makeL1(grp, rx, rowY, caps[idx2]);
+        }
+      }
+      rowY += rowH[r2] + GAPY;
+    }
+    y += bandH + 40;
+  }
+
+  // --- Mostrar en la UI ----------------------------------------------------
+  if (nuevo && typeof m.openInUI === "function") m.openInUI();
+  if (typeof view.openInUI === "function") view.openInUI();
+  else console.log("Abra la vista manualmente en Models > Views.");
+
+  console.log("OK: vista '" + VIEW_NAME + "' creada y abierta.");
+  console.log("15 capacidades L1 y sus sub-capacidades L2. Objetos de negocio mencionados en la descripcion de cada L2.");
+  console.log("Guarde con File > Save y publique con coArchi.");
+
+} catch (err) {
+  console.error("ERROR al ejecutar el script: " + err);
+}

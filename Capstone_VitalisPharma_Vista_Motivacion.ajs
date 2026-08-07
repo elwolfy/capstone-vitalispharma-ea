@@ -1,0 +1,151 @@
+/*
+ * ============================================================================
+ *  Capstone TOGAF 10 - VitalisPharma Internacional
+ *  Primera vista del proyecto: VISTA DE MOTIVACION (Fase A del ADM)
+ *  ----------------------------------------------------------------------------
+ *  Script para el plugin jArchi de Archi (https://www.archimatetool.com/).
+ *
+ *  COMO USARLO:
+ *    1) Archi con el plugin jArchi instalado (Help > Manage Plug-ins).
+ *    2) Menu Scripts > abra este archivo .ajs y pulse Run.
+ *    3) Se crea un modelo nuevo con la vista "A - Motivacion (VitalisPharma)".
+ *    4) En el arbol Models, expanda el modelo > Views y haga doble clic en la vista.
+ *    5) Guarde (File > Save) y publiquelo con coArchi.
+ *
+ *  Si NO aparece el modelo: abra la consola de jArchi y lea el texto en rojo;
+ *  ese mensaje indica la linea que fallo.
+ * ============================================================================
+ */
+
+console.show();
+console.clear();
+console.log("Generando la Vista de Motivacion del Capstone VitalisPharma...");
+
+try {
+
+  // --- Crear un modelo nuevo (queda en el arbol Models) --------------------
+  var m = $.model.create("Capstone - VitalisPharma Internacional");
+  m.purpose = "Modelo del proyecto Capstone del curso Arquitectura Empresarial con TOGAF 10 "
+            + "(CPS Tech). Vista de Motivacion de la Fase A del ADM.";
+
+  // --- Crear la vista ------------------------------------------------------
+  var view = m.createArchimateView("A - Motivacion (VitalisPharma)");
+
+  // --- Utilitarios ---------------------------------------------------------
+  var W = 190, H = 55;
+  function node(type, name, x, y) {
+    var el = m.createElement(type, name);   // crea el elemento en el modelo
+    return view.add(el, x, y, W, H);        // lo coloca en la vista, devuelve el objeto de diagrama
+  }
+  function link(type, src, tgt) {
+    var rel = m.createRelationship(type, "", src.concept, tgt.concept);
+    view.add(rel, src, tgt);                // dibuja la conexion en la vista
+    return rel;
+  }
+
+  var Cx = { stake: 30, driver: 290, assess: 290, goal: 560, req: 830, prin: 1100 };
+
+  // 1) STAKEHOLDERS
+  var s_directorio = node("stakeholder", "Directorio / CEO",              Cx.stake,  20);
+  var s_regulatorio= node("stakeholder", "Asuntos Regulatorios / QA",     Cx.stake, 100);
+  var s_operaciones= node("stakeholder", "Direccion de Operaciones",      Cx.stake, 180);
+  var s_suministro = node("stakeholder", "Cadena de Suministro / Logistica", Cx.stake, 260);
+  var s_ti         = node("stakeholder", "Direccion de TI / Arquitectura", Cx.stake, 340);
+  var s_clientes   = node("stakeholder", "Clientes / Distribuidores",     Cx.stake, 420);
+
+  // 2) DRIVERS
+  var d_reg   = node("driver", "Cumplimiento regulatorio (serializacion, GMP/GDP)", Cx.driver,  20);
+  var d_sum   = node("driver", "Continuidad de suministro (evitar quiebres/mermas)", Cx.driver, 130);
+  var d_tec   = node("driver", "Eficiencia y modernizacion tecnologica",            Cx.driver, 240);
+  var d_intl  = node("driver", "Crecimiento internacional",                         Cx.driver, 350);
+
+  // 3) ASSESSMENTS
+  var a_frag  = node("assessment", "Sistemas heredados y fragmentados entre paises", Cx.assess, 470);
+  var a_frio  = node("assessment", "Fallas en la cadena de frio generan mermas",     Cx.assess, 560);
+
+  // 4) GOALS
+  var g_traza = node("goal", "Trazabilidad serializada extremo a extremo", Cx.goal,  20);
+  var g_cumpl = node("goal", "Cumplimiento regulatorio sostenido",         Cx.goal, 120);
+  var g_merma = node("goal", "Reducir mermas y quiebres de stock",         Cx.goal, 220);
+  var g_visib = node("goal", "Visibilidad de inventario en tiempo real",   Cx.goal, 320);
+  var g_creci = node("goal", "Habilitar el crecimiento internacional",     Cx.goal, 420);
+
+  // 5) OUTCOME
+  var o_merma = node("outcome", "Mermas por cadena de frio -30%", Cx.goal, 520);
+
+  // 6) REQUIREMENTS
+  var r_seri  = node("requirement", "Serializacion y track & trace (GS1)",     Cx.req,  20);
+  var r_iot   = node("requirement", "Monitoreo IoT de cadena de frio",         Cx.req, 120);
+  var r_integ = node("requirement", "Integracion MES - WMS - ERP",             Cx.req, 220);
+  var r_inv   = node("requirement", "Inventario unificado multi-pais",         Cx.req, 320);
+  var r_plan  = node("requirement", "Planificacion integrada demanda-abastecimiento", Cx.req, 420);
+
+  // 7) PRINCIPLES + CONSTRAINT
+  var p_cump  = node("principle", "Cumplimiento por diseno",               Cx.prin,  20);
+  var p_datos = node("principle", "Datos maestros unicos (single source)", Cx.prin, 130);
+  var p_reuso = node("principle", "Reutilizacion y estandares abiertos",   Cx.prin, 240);
+  var c_pres  = node("constraint","Presupuesto a 3 anios; regulaciones locales", Cx.prin, 360);
+
+  // --- RELACIONES ----------------------------------------------------------
+  // Stakeholders -> Drivers (association)
+  link("association-relationship", s_directorio, d_intl);
+  link("association-relationship", s_directorio, d_reg);
+  link("association-relationship", s_regulatorio, d_reg);
+  link("association-relationship", s_operaciones, d_sum);
+  link("association-relationship", s_suministro, d_sum);
+  link("association-relationship", s_ti, d_tec);
+  link("association-relationship", s_clientes, d_intl);
+
+  // Assessments -> Drivers (influence)
+  link("influence-relationship", a_frag, d_tec);
+  link("influence-relationship", a_frio, d_sum);
+
+  // Drivers -> Goals (influence)
+  link("influence-relationship", d_reg,  g_traza);
+  link("influence-relationship", d_reg,  g_cumpl);
+  link("influence-relationship", d_sum,  g_merma);
+  link("influence-relationship", d_tec,  g_visib);
+  link("influence-relationship", d_intl, g_creci);
+
+  // Outcome -> Goal (realization)
+  link("realization-relationship", o_merma, g_merma);
+
+  // Requirements -> Goals (realization)
+  link("realization-relationship", r_seri,  g_traza);
+  link("realization-relationship", r_seri,  g_cumpl);
+  link("realization-relationship", r_iot,   g_merma);
+  link("realization-relationship", r_integ, g_visib);
+  link("realization-relationship", r_inv,   g_visib);
+  link("realization-relationship", r_plan,  g_merma);
+
+  // Principles -> Goals (influence)
+  link("influence-relationship", p_cump,  g_cumpl);
+  link("influence-relationship", p_datos, g_visib);
+  link("influence-relationship", p_reuso, g_traza);
+
+  // Constraint -> Requirement (association)
+  link("association-relationship", c_pres, r_seri);
+
+  // --- IMPORTANTE: cargar el modelo en el arbol Models de la UI ------------
+  // jArchi crea el modelo en memoria; sin esto NO aparece en el arbol.
+  if (typeof m.openInUI === "function") {
+    m.openInUI();
+    console.log("OK: modelo cargado en el arbol Models.");
+  } else {
+    // Respaldo para versiones sin openInUI(): guardar a un archivo lo carga en el arbol.
+    var path = window.promptSaveFile({ title: "Guardar el modelo Capstone", filterExtensions: ["*.archimate"] });
+    if (path) {
+      if (!/\.archimate$/i.test(path)) path += ".archimate";
+      m.save(path);
+      console.log("OK: modelo guardado y cargado desde: " + path);
+    } else {
+      console.log("No se cargo en la UI. Actualice jArchi (soporta openInUI) o elija una ruta al guardar.");
+    }
+  }
+  console.log("Abra: 'Capstone - VitalisPharma Internacional' > Views > 'A - Motivacion (VitalisPharma)'.");
+  console.log("Luego guarde con File > Save y publique con coArchi.");
+
+} catch (err) {
+  console.error("ERROR al ejecutar el script: " + err);
+  console.error("Verifique que jArchi este actualizado (menu Scripts) y reintente.");
+}

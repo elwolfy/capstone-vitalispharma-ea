@@ -1,0 +1,162 @@
+/*
+ * ============================================================================
+ *  Capstone TOGAF 10 - VitalisPharma Internacional
+ *  Vista: ESTRATEGICA (Fase A del ADM)
+ *  ----------------------------------------------------------------------------
+ *  Enlaza, de izquierda a derecha, la historia estrategica:
+ *    CURSOS DE ACCION (iniciativas) -> CAPACIDADES a desarrollar ->
+ *    RESULTADOS ESPERADOS (Outcomes) -> METAS (Goals)
+ *
+ *  Reutiliza los elementos ya existentes en el modelo (outcomes, capacidades y
+ *  metas creados en las vistas de Motivacion y de Capacidades); si no existen,
+ *  los crea. Reutiliza tambien las relaciones existentes para no duplicarlas.
+ *
+ *  SUGERENCIA: tenga SELECCIONADO el modelo Capstone en el arbol antes de ejecutar.
+ * ============================================================================
+ */
+
+console.show();
+console.clear();
+console.log("Generando la vista Estrategica (Iniciativas > Capacidades > Resultados > Metas)...");
+
+try {
+
+  var VIEW_NAME = "A - Estrategica: Resultados y Capacidades (VitalisPharma)";
+
+  // --- Modelo destino ------------------------------------------------------
+  var m = (typeof model !== "undefined" && model) ? model : null;
+  var nuevo = false;
+  if (!m) {
+    try {
+      var loaded = $.model.getLoadedModels();
+      for (var i = 0; i < loaded.length; i++)
+        if ((loaded[i].name || "").indexOf("VitalisPharma") >= 0) { m = loaded[i]; break; }
+    } catch (e) {}
+    if (!m) { m = $.model.create("Capstone - VitalisPharma Internacional"); nuevo = true; }
+  }
+  console.log("Modelo destino: " + m.name + (nuevo ? " (nuevo)" : " (seleccionado)"));
+
+  // Eliminar vista previa con el mismo nombre (actualizar limpio)
+  try { $(m).find("view").each(function (v) { if (v.name === VIEW_NAME) v.delete(); }); } catch (e) {}
+  var view = m.createArchimateView(VIEW_NAME);
+
+  // --- Layout por columnas -------------------------------------------------
+  var COLW = 250, ELH = 62, CGAP = 78, ROW0 = 92, ROWSTEP = 82;
+  function colX(i) { return 20 + i * (COLW + CGAP); }
+
+  function header(col, text) {
+    var n = view.createObject("note", colX(col), 20, COLW, 46);
+    n.text = text; n.fillColor = "#04353D"; n.fontColor = "#FFFFFF"; n.textAlignment = 2;
+  }
+
+  // Busca un elemento por tipo+nombre; si no existe, lo crea
+  function getOrCreate(type, name, doc) {
+    var found = null;
+    try { $(m).find(type).each(function (e) { if (!found && e.name === name) found = e; }); } catch (e) {}
+    if (!found) found = m.createElement(type, name);
+    if (doc && (!found.documentation || found.documentation === "")) found.documentation = doc;
+    return found;
+  }
+  // Coloca un elemento en la vista (col, fila) y devuelve el objeto de diagrama
+  function put(col, row, type, name, doc) {
+    return view.add(getOrCreate(type, name, doc), colX(col), ROW0 + row * ROWSTEP, COLW, ELH);
+  }
+  // Crea o reutiliza una relacion y la dibuja; con respaldo a association
+  function relate(preferred, srcObj, tgtObj, name) {
+    var s = srcObj.concept, t = tgtObj.concept, existing = null;
+    try { $(s).outRels().each(function (r) { if (!existing && r.target && r.target.id === t.id) existing = r; }); } catch (e) {}
+    if (existing) { try { view.add(existing, srcObj, tgtObj); } catch (e) {} return existing; }
+    var rel;
+    try { rel = m.createRelationship(preferred, name || "", s, t); }
+    catch (e) {
+      rel = m.createRelationship("association-relationship", name || "", s, t);
+      console.log("Aviso: " + preferred + " no valido (" + s.name + " -> " + t.name + "); se uso association.");
+    }
+    try { view.add(rel, srcObj, tgtObj); } catch (e) {}
+    return rel;
+  }
+
+  // --- Titulo --------------------------------------------------------------
+  var title = view.createObject("note", 20, 6, 900, 30);
+  title.text = "Vista Estrategica - VitalisPharma: como las iniciativas y capacidades logran los resultados esperados";
+  title.fillColor = "#028090"; title.fontColor = "#FFFFFF"; title.textAlignment = 2;
+
+  // === COLUMNA 0: CURSOS DE ACCION (iniciativas) ===========================
+  header(0, "CURSOS DE ACCION (INICIATIVAS)");
+  var ca_ser = put(0, 0, "course-of-action", "Programa de Serializacion y Trazabilidad (GS1)", "Implementa la serializacion GS1 y la trazabilidad de lote extremo a extremo.");
+  var ca_frio= put(0, 1, "course-of-action", "Programa de Cadena de Frio Digital (IoT)", "Digitaliza el monitoreo de temperatura y el transporte refrigerado.");
+  var ca_sop = put(0, 2, "course-of-action", "Programa de Planeamiento Integrado (S&OP)", "Integra la planificacion de demanda y abastecimiento e inventario multi-pais.");
+  var ca_cal = put(0, 3, "course-of-action", "Programa de Calidad Digital", "Digitaliza QC, la liberacion de producto y la gestion de desviaciones/CAPA.");
+  var ca_intl= put(0, 4, "course-of-action", "Programa de Expansion y Registro Internacional", "Habilita el registro sanitario y la exportacion a nuevos mercados.");
+  var ca_int = put(0, 5, "course-of-action", "Programa de Integracion de Sistemas y Datos Maestros", "Integra MES-WMS-ERP y establece datos maestros unicos.");
+
+  // === COLUMNA 1: CAPACIDADES a desarrollar ================================
+  header(1, "CAPACIDADES A DESARROLLAR");
+  var cap_ser = put(1, 0, "capability", "Serializacion y Trazabilidad");
+  var cap_dis = put(1, 1, "capability", "Distribucion y Logistica");
+  var cap_sum = put(1, 2, "capability", "Gestion de Cadena de Suministro");
+  var cap_cal = put(1, 3, "capability", "Gestion de Calidad (QA/QC)");
+  var cap_reg = put(1, 4, "capability", "Gestion Regulatoria y de Cumplimiento");
+  var cap_ti  = put(1, 5, "capability", "Gestion de TI y Datos");
+
+  // === COLUMNA 2: RESULTADOS ESPERADOS (Outcomes) =========================
+  header(2, "RESULTADOS ESPERADOS");
+  var o1 = put(2, 0, "outcome", "Mermas por cadena de frio -30%");
+  var o2 = put(2, 1, "outcome", "Trazabilidad 100% de lotes exportados");
+  var o3 = put(2, 2, "outcome", "Quiebres de stock -25%");
+  var o4 = put(2, 3, "outcome", "Tiempo de liberacion de producto -40%");
+  var o5 = put(2, 4, "outcome", "Cobertura internacional +3 paises");
+  var o6 = put(2, 5, "outcome", "Auditorias regulatorias aprobadas sin observaciones");
+  var o7 = put(2, 6, "outcome", "Tiempo de recall/retiro de lote < 24 h");
+
+  // === COLUMNA 3: METAS (Goals) ===========================================
+  header(3, "METAS");
+  var g_traza = put(3, 0, "goal", "Trazabilidad serializada extremo a extremo");
+  var g_cumpl = put(3, 1, "goal", "Cumplimiento regulatorio sostenido");
+  var g_merma = put(3, 2, "goal", "Reducir mermas y quiebres de stock");
+  var g_visib = put(3, 3, "goal", "Visibilidad de inventario en tiempo real");
+  var g_creci = put(3, 4, "goal", "Habilitar el crecimiento internacional");
+
+  // === RELACIONES ==========================================================
+  // Cursos de accion -> desarrollan -> Capacidades
+  relate("realization-relationship", ca_ser,  cap_ser, "desarrolla");
+  relate("realization-relationship", ca_frio, cap_dis, "desarrolla");
+  relate("realization-relationship", ca_sop,  cap_sum, "desarrolla");
+  relate("realization-relationship", ca_cal,  cap_cal, "desarrolla");
+  relate("realization-relationship", ca_intl, cap_reg, "desarrolla");
+  relate("realization-relationship", ca_int,  cap_ti,  "desarrolla");
+
+  // Capacidades -> contribuyen a -> Resultados esperados
+  relate("influence-relationship", cap_ser, o2, "contribuye a");
+  relate("influence-relationship", cap_ser, o7, "contribuye a");
+  relate("influence-relationship", cap_dis, o1, "contribuye a");
+  relate("influence-relationship", cap_dis, o5, "contribuye a");
+  relate("influence-relationship", cap_sum, o3, "contribuye a");
+  relate("influence-relationship", cap_cal, o4, "contribuye a");
+  relate("influence-relationship", cap_cal, o6, "contribuye a");
+  relate("influence-relationship", cap_reg, o6, "contribuye a");
+  relate("influence-relationship", cap_reg, o5, "contribuye a");
+  relate("influence-relationship", cap_ti,  o2, "contribuye a");
+  relate("influence-relationship", cap_ti,  o3, "contribuye a");
+
+  // Resultados esperados -> realizan -> Metas
+  relate("realization-relationship", o1, g_merma);
+  relate("realization-relationship", o2, g_traza);
+  relate("realization-relationship", o3, g_merma);
+  relate("realization-relationship", o4, g_cumpl);
+  relate("realization-relationship", o5, g_creci);
+  relate("realization-relationship", o6, g_cumpl);
+  relate("realization-relationship", o7, g_traza);
+
+  // --- Mostrar en la UI ----------------------------------------------------
+  if (nuevo && typeof m.openInUI === "function") m.openInUI();
+  if (typeof view.openInUI === "function") view.openInUI();
+  else console.log("Abra la vista manualmente en Models > Views.");
+
+  console.log("OK: vista '" + VIEW_NAME + "' creada y abierta.");
+  console.log("Cadena: Iniciativas -> Capacidades -> Resultados esperados -> Metas.");
+  console.log("Guarde con File > Save y publique con coArchi.");
+
+} catch (err) {
+  console.error("ERROR al ejecutar el script: " + err);
+}
