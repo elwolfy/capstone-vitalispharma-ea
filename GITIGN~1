@@ -1,0 +1,12 @@
+# Archivos locales / temporales
+*.tmp
+*.bak
+*~
+.DS_Store
+Thumbs.db
+
+# Backups locales del modelo generados por Archi
+*.archimate.bak
+
+# Carpeta de trabajo local del sistema operativo
+.idea/
