@@ -1,0 +1,5 @@
+<archimate:Device
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Sensor de Temperatura - Centro de Distribucion (CEDIS)"
+    id="id-ebb3237ccdc44739af5bea8046d7a3d4"
+    documentation="Device. Mide temperatura."/>

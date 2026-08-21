@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Orden de Compra (ERP)"
+    id="id-b26cd9ce0b5b4be8ad872cd17008975b"
+    documentation="Data Object. Datos de una compra a proveedor."/>

@@ -1,0 +1,5 @@
+<archimate:ValueStream
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Serializar y Agregar"
+    id="id-4299505ba193451fb9dca15295c5ccde"
+    documentation="Value stage. Serializa (GS1) y agrega las unidades del envio."/>

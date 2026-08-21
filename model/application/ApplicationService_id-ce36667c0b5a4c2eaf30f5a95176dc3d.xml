@@ -1,0 +1,5 @@
+<archimate:ApplicationService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Servicio de Transporte"
+    id="id-ce36667c0b5a4c2eaf30f5a95176dc3d"
+    documentation="Application Service. Planifica y da seguimiento a los envios."/>

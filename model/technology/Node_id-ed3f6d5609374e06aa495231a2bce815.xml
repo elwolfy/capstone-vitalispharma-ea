@@ -1,0 +1,5 @@
+<archimate:Node
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Servidor ERP"
+    id="id-ed3f6d5609374e06aa495231a2bce815"
+    documentation="Node. Aloja el ERP (SAP ECC)."/>

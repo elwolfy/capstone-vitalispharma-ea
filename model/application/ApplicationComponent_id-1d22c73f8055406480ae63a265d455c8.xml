@@ -1,0 +1,5 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="RIM"
+    id="id-1d22c73f8055406480ae63a265d455c8"
+    documentation="RIM (Regulatory Information Management). Sistema que centraliza la informacion y los tramites regulatorios ante las autoridades.&#xA;&#xA;Funcionalidad:&#xA;- Registro y variaciones sanitarias&#xA;- Gestion de expedientes/dossiers (CTD)&#xA;- Submissions y seguimiento a autoridades&#xA;- Control de vigencias y compromisos&#xA;Framework monolitico: RIM comercial monolitico (BD unica, on-premise).&#xA;Modernizacion TO BE: microservicios de Registro, Expediente y Submissions."/>

@@ -1,0 +1,5 @@
+<archimate:ApplicationService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Servicio de Informacion Regulatoria"
+    id="id-a3134c4c445b428981f7ea85c6b30c66"
+    documentation="Application Service. Administra registros y expedientes regulatorios."/>

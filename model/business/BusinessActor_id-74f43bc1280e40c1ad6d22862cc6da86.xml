@@ -1,0 +1,5 @@
+<archimate:BusinessActor
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Compras"
+    id="id-74f43bc1280e40c1ad6d22862cc6da86"
+    documentation="Business Actor. Area que califica proveedores y ejecuta compras."/>

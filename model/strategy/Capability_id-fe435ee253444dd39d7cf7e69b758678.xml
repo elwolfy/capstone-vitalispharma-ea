@@ -1,0 +1,5 @@
+<archimate:Capability
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Liberación de Lote (QA)"
+    id="id-fe435ee253444dd39d7cf7e69b758678"
+    documentation="Capability (Nivel 2 - ciclo de vida). Libera formalmente el lote al mercado."/>

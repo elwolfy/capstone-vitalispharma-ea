@@ -1,0 +1,5 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="CRM"
+    id="id-f1692bbab8e947b59f59f8913dd5f10c"
+    documentation="CRM (Customer Relationship Management). Sistema de gestion comercial y de la relacion con clientes.&#xA;&#xA;Funcionalidad:&#xA;- Datos maestros de clientes&#xA;- Gestion de pedidos y cotizaciones&#xA;- Contactos y oportunidades&#xA;- Servicio al cliente&#xA;Framework monolitico: CRM monolitico (suite unica).&#xA;Modernizacion TO BE: microservicios de Cliente, Pedido y Servicio."/>

@@ -1,0 +1,5 @@
+<archimate:Device
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Gateway IoT - Planta Biologicos"
+    id="id-d0fdbd824a764e1a959eedc5819f9f37"
+    documentation="Device. Concentra sensores y envia a la nube."/>

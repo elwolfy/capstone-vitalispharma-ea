@@ -1,0 +1,5 @@
+<archimate:BusinessActor
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Ventas"
+    id="id-e8ca9cce555e43c9a95f82e797e6323b"
+    documentation="Business Actor. Area que gestiona pedidos y ventas."/>

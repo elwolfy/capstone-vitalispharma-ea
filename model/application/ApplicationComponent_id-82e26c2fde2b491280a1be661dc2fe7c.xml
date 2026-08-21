@@ -1,0 +1,5 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="QMS"
+    id="id-82e26c2fde2b491280a1be661dc2fe7c"
+    documentation="QMS (Quality Management System). Sistema de gestion de la calidad y el cumplimiento (GxP).&#xA;&#xA;Funcionalidad:&#xA;- Desviaciones y no conformidades&#xA;- CAPA y control de cambios&#xA;- Auditorias e inspecciones&#xA;- Documentos y capacitaciones&#xA;Framework monolitico: QMS monolitico (plataforma unica).&#xA;Modernizacion TO BE: microservicios de Desviacion/CAPA, Cambios y Auditorias."/>

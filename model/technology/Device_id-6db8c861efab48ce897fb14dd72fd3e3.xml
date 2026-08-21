@@ -1,0 +1,5 @@
+<archimate:Device
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Gateway IoT - Centro de Distribucion (CEDIS)"
+    id="id-6db8c861efab48ce897fb14dd72fd3e3"
+    documentation="Device. Concentra sensores y envia a la nube."/>

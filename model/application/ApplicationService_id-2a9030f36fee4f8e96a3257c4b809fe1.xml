@@ -1,0 +1,5 @@
+<archimate:ApplicationService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Servicio de Analitica y Reportes"
+    id="id-2a9030f36fee4f8e96a3257c4b809fe1"
+    documentation="Application Service. Provee indicadores y reportes de gestion."/>

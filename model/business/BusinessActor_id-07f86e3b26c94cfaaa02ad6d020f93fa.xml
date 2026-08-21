@@ -1,0 +1,5 @@
+<archimate:BusinessActor
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Planificacion de Produccion"
+    id="id-07f86e3b26c94cfaaa02ad6d020f93fa"
+    documentation="Business Actor. Area que programa las ordenes de fabricacion."/>

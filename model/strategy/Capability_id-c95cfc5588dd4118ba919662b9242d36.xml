@@ -1,0 +1,5 @@
+<archimate:Capability
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Gestión de Proveedores"
+    id="id-c95cfc5588dd4118ba919662b9242d36"
+    documentation="Capability (Nivel 1). Objeto de negocio: Proveedor. Gestiona el ciclo de vida completo de Proveedor."/>

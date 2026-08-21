@@ -1,0 +1,5 @@
+<archimate:BusinessActor
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Servicio al Cliente"
+    id="id-ae93db0d96e14ac19a74872dc54399ca"
+    documentation="Business Actor. Area que atiende a clientes y distribuidores."/>

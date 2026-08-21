@@ -1,0 +1,5 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="BI"
+    id="id-8ec161e439334f5c99f3e41bef992542"
+    documentation="BI (Business Intelligence). Plataforma de analitica y reportes para la toma de decisiones.&#xA;&#xA;Funcionalidad:&#xA;- ETL desde sistemas fuente&#xA;- Modelos/cubos analiticos&#xA;- Reportes e indicadores (KPIs)&#xA;- Tableros ejecutivos&#xA;Framework monolitico: DW/BI monolitico (ETL nocturno, BD unica).&#xA;Modernizacion TO BE: productos de datos y analitica desacoplada (data mesh)."/>

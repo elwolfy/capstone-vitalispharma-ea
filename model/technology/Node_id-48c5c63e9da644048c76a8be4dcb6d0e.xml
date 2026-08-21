@@ -1,0 +1,5 @@
+<archimate:Node
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Servidor de Integracion (ESB)"
+    id="id-48c5c63e9da644048c76a8be4dcb6d0e"
+    documentation="Node. Bus de integracion punto a punto entre sistemas."/>

@@ -1,0 +1,5 @@
+<archimate:BusinessProcess
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Distribuir (Cadena de Frio)"
+    id="id-353d7dd5c04f4b87836bba62e33e2afc"
+    documentation="Business Process. Transporta el producto con control termico hasta el cliente."/>

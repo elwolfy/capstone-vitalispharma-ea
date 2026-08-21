@@ -1,0 +1,5 @@
+<archimate:ApplicationService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Servicio de Calidad (Desviaciones/CAPA)"
+    id="id-eb7245e5309a49e4a6b853087f21e2e1"
+    documentation="Application Service. Gestiona desviaciones, CAPA, cambios y auditorias."/>

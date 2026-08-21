@@ -1,0 +1,5 @@
+<archimate:Capability
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Gestión de la Trazabilidad"
+    id="id-3ff20af1a0e14808a061adc15198b1bf"
+    documentation="Capability (Nivel 1). Objeto de negocio: Evento de Trazabilidad. Gestiona el ciclo de vida completo de Evento de Trazabilidad."/>

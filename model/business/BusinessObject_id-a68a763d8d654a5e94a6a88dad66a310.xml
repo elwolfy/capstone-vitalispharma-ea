@@ -1,0 +1,5 @@
+<archimate:BusinessObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Producto Serializado"
+    id="id-a68a763d8d654a5e94a6a88dad66a310"
+    documentation="Business Object. Unidad con identidad unica (GTIN/serial)."/>

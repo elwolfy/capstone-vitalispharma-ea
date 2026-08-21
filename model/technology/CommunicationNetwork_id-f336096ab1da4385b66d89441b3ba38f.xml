@@ -1,0 +1,5 @@
+<archimate:CommunicationNetwork
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Red WAN Corporativa (MPLS/VPN)"
+    id="id-f336096ab1da4385b66d89441b3ba38f"
+    documentation="Communication Network. Interconecta DC, nube, plantas y CEDIS."/>

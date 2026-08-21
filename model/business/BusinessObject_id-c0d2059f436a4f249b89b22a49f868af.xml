@@ -1,0 +1,5 @@
+<archimate:BusinessObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Liberación de Lote"
+    id="id-c0d2059f436a4f249b89b22a49f868af"
+    documentation="Business Object. Decision de calidad que autoriza la venta del lote."/>

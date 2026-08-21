@@ -1,0 +1,5 @@
+<archimate:BusinessProcess
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Procesos Core"
+    id="id-fab59efffdc9460f9ee3d7f388a28534"
+    documentation="Business Process. Proceso principal de la operacion; agrupa los sub-procesos de la cadena de valor."/>

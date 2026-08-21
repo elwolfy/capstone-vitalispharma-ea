@@ -1,0 +1,5 @@
+<archimate:ApplicationService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Servicio de Laboratorio"
+    id="id-b15b188262994cfcb0d10be89d212559"
+    documentation="Application Service. Gestiona muestras, ensayos y resultados."/>

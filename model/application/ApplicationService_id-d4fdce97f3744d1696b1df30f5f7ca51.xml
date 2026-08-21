@@ -1,0 +1,5 @@
+<archimate:ApplicationService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Servicio de Ejecucion de Manufactura"
+    id="id-d4fdce97f3744d1696b1df30f5f7ca51"
+    documentation="Application Service. Registra y controla la fabricacion de lotes."/>

@@ -1,0 +1,5 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Plataforma IoT Cadena de Frio"
+    id="id-4a644cdd6a4b4186b12740c0da173aac"
+    documentation="Plataforma IoT (Internet of Things). Sistema de sensores que monitorea la cadena de frio en tiempo real.&#xA;&#xA;Funcionalidad:&#xA;- Ingesta de lecturas de sensores&#xA;- Reglas de alerta por temperatura&#xA;- Dashboards y trazabilidad termica&#xA;- Registro para auditoria&#xA;Framework monolitico: Plataforma IoT monolitica (gateway + backend unico).&#xA;Modernizacion TO BE: microservicios de Ingesta, Alertas y Dashboard."/>

@@ -1,0 +1,5 @@
+<archimate:BusinessObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Orden de Fabricación"
+    id="id-b15a821e3f0d4b7fb6bd862d7f4c3216"
+    documentation="Business Object. Instruccion que autoriza la produccion de un lote."/>

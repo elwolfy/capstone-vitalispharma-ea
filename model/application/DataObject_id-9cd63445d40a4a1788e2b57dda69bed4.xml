@@ -1,0 +1,5 @@
+<archimate:DataObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Lectura de Temperatura (IoT)"
+    id="id-9cd63445d40a4a1788e2b57dda69bed4"
+    documentation="Data Object. Datos de temperatura de sensores."/>

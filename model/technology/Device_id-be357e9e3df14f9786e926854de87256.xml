@@ -1,0 +1,5 @@
+<archimate:Device
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Gateway IoT - Planta Solidos Orales"
+    id="id-be357e9e3df14f9786e926854de87256"
+    documentation="Device. Concentra sensores y envia a la nube."/>

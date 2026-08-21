@@ -1,0 +1,5 @@
+<archimate:Requirement
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Monitoreo IoT de cadena de frio"
+    id="id-3d3d84d0ab044bd2a725b2be93664a95"
+    documentation="Requirement. Sensar y alertar la temperatura en tiempo real."/>

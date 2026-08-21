@@ -1,0 +1,5 @@
+<archimate:BusinessProcess
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Liberar Producto"
+    id="id-3e261a13355e4644aa599f3f75b56511"
+    documentation="Business Process. Calidad autoriza formalmente la venta del lote (QA release)."/>

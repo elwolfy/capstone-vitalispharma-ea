@@ -1,0 +1,12 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="entrega"
+    id="id-a383614ca3c946e0a8111b560e70971b">
+  <source
+      xsi:type="archimate:ValueStream"
+      href="ValueStream_id-2603976241484e95939b20a92e2fe298.xml#id-2603976241484e95939b20a92e2fe298"/>
+  <target
+      xsi:type="archimate:Value"
+      href="Value_id-9afe77a2af6a445f8aa543c4e716b061.xml#id-9afe77a2af6a445f8aa543c4e716b061"/>
+</archimate:AssociationRelationship>

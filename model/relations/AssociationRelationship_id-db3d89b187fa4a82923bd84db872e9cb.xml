@@ -1,0 +1,12 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="desarrolla"
+    id="id-db3d89b187fa4a82923bd84db872e9cb">
+  <source
+      xsi:type="archimate:CourseOfAction"
+      href="CourseOfAction_id-eb0d00402d2e4f73bf776475a2f28668.xml#id-eb0d00402d2e4f73bf776475a2f28668"/>
+  <target
+      xsi:type="archimate:Capability"
+      href="Capability_id-45f12e992a7f4a39b10025ef480fa119.xml#id-45f12e992a7f4a39b10025ef480fa119"/>
+</archimate:AssociationRelationship>

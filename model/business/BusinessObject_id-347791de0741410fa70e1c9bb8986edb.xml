@@ -1,0 +1,5 @@
+<archimate:BusinessObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Inventario / Stock"
+    id="id-347791de0741410fa70e1c9bb8986edb"
+    documentation="Business Object. Existencias por ubicacion y pais."/>

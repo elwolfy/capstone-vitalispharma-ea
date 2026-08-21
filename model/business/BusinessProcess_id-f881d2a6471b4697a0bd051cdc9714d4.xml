@@ -1,0 +1,5 @@
+<archimate:BusinessProcess
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Almacenar en CEDIS"
+    id="id-f881d2a6471b4697a0bd051cdc9714d4"
+    documentation="Business Process. Recibe y almacena el producto en el centro de distribucion."/>

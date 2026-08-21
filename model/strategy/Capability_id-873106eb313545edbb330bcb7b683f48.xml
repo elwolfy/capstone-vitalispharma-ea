@@ -1,0 +1,5 @@
+<archimate:Capability
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Control de Activos"
+    id="id-873106eb313545edbb330bcb7b683f48"
+    documentation="Capability (Nivel 2 - ciclo de vida). Controla el estado y la vida util de los activos."/>

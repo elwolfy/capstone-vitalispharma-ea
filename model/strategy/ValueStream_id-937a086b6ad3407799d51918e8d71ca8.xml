@@ -1,0 +1,5 @@
+<archimate:ValueStream
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Recibir y Validar Pedido"
+    id="id-937a086b6ad3407799d51918e8d71ca8"
+    documentation="Value stage. Recibe y valida el pedido del cliente."/>

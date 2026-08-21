@@ -1,0 +1,5 @@
+<archimate:ApplicationService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Servicio de Serializacion (GS1)"
+    id="id-a52cb18a41c84fb5b1a6a34c8bad6072"
+    documentation="Application Service. Genera seriales, agrega y reporta a DSCSA/FMD."/>

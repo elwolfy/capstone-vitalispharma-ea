@@ -1,0 +1,5 @@
+<archimate:ApplicationService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Servicio de Gestion de Ordenes e Inventario"
+    id="id-696433c6270d48d99975865c19101aa6"
+    documentation="Application Service. Expone gestion de ordenes, inventario y back-office."/>

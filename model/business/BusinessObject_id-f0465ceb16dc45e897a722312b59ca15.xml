@@ -1,0 +1,5 @@
+<archimate:BusinessObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Dato Maestro"
+    id="id-f0465ceb16dc45e897a722312b59ca15"
+    documentation="Business Object. Dato de referencia unico (producto, lote, cliente, ubicacion)."/>

@@ -1,0 +1,5 @@
+<archimate:BusinessActor
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Distribucion"
+    id="id-fd43f5caa4284e41a07c72b9ee2a115f"
+    documentation="Business Actor. Area que transporta con control de cadena de frio."/>

@@ -1,0 +1,5 @@
+<archimate:ApplicationService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Servicio de Almacen"
+    id="id-2b7a1bcc1d654cd0ad309e37455025a9"
+    documentation="Application Service. Controla recepcion, ubicacion y despacho."/>

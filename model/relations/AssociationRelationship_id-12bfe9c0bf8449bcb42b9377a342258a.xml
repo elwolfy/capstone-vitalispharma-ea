@@ -1,0 +1,12 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="impulsa"
+    id="id-12bfe9c0bf8449bcb42b9377a342258a">
+  <source
+      xsi:type="archimate:Driver"
+      href="Driver_id-159af9faec2b4e6786dc429d8b94000c.xml#id-159af9faec2b4e6786dc429d8b94000c"/>
+  <target
+      xsi:type="archimate:CourseOfAction"
+      href="CourseOfAction_id-a745b0c6b2624e10919410502389c80b.xml#id-a745b0c6b2624e10919410502389c80b"/>
+</archimate:AssociationRelationship>

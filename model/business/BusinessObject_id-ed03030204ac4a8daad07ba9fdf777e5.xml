@@ -1,0 +1,5 @@
+<archimate:BusinessObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Lote de Producción"
+    id="id-ed03030204ac4a8daad07ba9fdf777e5"
+    documentation="Business Object. Unidad de producto fabricada; base de la trazabilidad. Ancla: Gestión de la Producción."/>

@@ -1,0 +1,5 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Plataforma de Serializacion"
+    id="id-8709795c30174b42ab4bbdbc5d21a3a4"
+    documentation="Plataforma de Serializacion (Track &amp; Trace / Serializacion GS1). Sistema que asigna identidad unica al producto y lo rastrea.&#xA;&#xA;Funcionalidad:&#xA;- Comisionado de seriales (GTIN/serial)&#xA;- Agregacion y desagregacion&#xA;- Reporte a DSCSA/FMD y a EMVS/NMVS&#xA;- Verificacion de producto&#xA;Framework monolitico: Plataforma propietaria monolitica (SaaS mono-tenant).&#xA;Modernizacion TO BE: microservicios de Serial, Agregacion y Reporte regulatorio."/>

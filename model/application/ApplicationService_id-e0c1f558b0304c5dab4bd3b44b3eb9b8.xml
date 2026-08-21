@@ -1,0 +1,5 @@
+<archimate:ApplicationService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Servicio de Monitoreo de Temperatura"
+    id="id-e0c1f558b0304c5dab4bd3b44b3eb9b8"
+    documentation="Application Service. Recibe lecturas de sensores y emite alertas."/>

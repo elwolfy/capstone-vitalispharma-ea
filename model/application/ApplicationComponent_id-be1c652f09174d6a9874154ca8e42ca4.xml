@@ -1,0 +1,5 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="TMS"
+    id="id-be1c652f09174d6a9874154ca8e42ca4"
+    documentation="TMS (Transportation Management System). Sistema de gestion del transporte y la distribucion.&#xA;&#xA;Funcionalidad:&#xA;- Planificacion de rutas y cargas&#xA;- Asignacion de transportistas&#xA;- Tracking y prueba de entrega&#xA;- Costeo de fletes&#xA;Framework monolitico: TMS monolitico (on-premise).&#xA;Modernizacion TO BE: microservicios de Planificacion, Tracking y Costeo."/>

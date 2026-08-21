@@ -1,0 +1,5 @@
+<archimate:BusinessProcess
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Serializar Producto"
+    id="id-3c7dea1f526845658068c99e08a03a60"
+    documentation="Business Process. Asigna identidad unica (GS1) y registra la agregacion."/>

@@ -1,0 +1,5 @@
+<archimate:Principle
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Datos maestros unicos (single source)"
+    id="id-5e0e3673e62b4969b13c9af991284b18"
+    documentation="Principle. Una unica fuente de verdad para los datos maestros."/>

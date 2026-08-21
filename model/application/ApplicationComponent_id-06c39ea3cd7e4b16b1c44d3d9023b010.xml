@@ -1,0 +1,5 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="MES"
+    id="id-06c39ea3cd7e4b16b1c44d3d9023b010"
+    documentation="MES (Manufacturing Execution System). Sistema que ejecuta y controla la produccion en planta en tiempo real.&#xA;&#xA;Funcionalidad:&#xA;- Ejecucion de ordenes de fabricacion&#xA;- Registro y genealogia de lote&#xA;- Parametros y control de proceso&#xA;- Consumos y rendimientos&#xA;Framework monolitico: MES monolitico (Java EE, servidor por planta).&#xA;Modernizacion TO BE: microservicios de Orden, Lote y Parametros de proceso."/>

@@ -1,0 +1,5 @@
+<archimate:BusinessProcess
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Facturar"
+    id="id-d2274ee2e366493c85ce80c97ae28d63"
+    documentation="Business Process. Emite la factura y cierra la venta."/>

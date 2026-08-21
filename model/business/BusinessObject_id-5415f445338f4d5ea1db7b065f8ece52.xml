@@ -1,0 +1,5 @@
+<archimate:BusinessObject
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Orden de Recall"
+    id="id-5415f445338f4d5ea1db7b065f8ece52"
+    documentation="Business Object. Instruccion para retirar un lote del mercado."/>

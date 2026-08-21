@@ -1,0 +1,5 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="WMS"
+    id="id-bcdc9f3b95b24aa4963438f4b0190db9"
+    documentation="WMS (Warehouse Management System). Sistema de gestion de almacenes y centros de distribucion.&#xA;&#xA;Funcionalidad:&#xA;- Recepcion y putaway&#xA;- Ubicacion y control de inventario&#xA;- Picking y packing&#xA;- Despacho y cross-docking&#xA;Framework monolitico: WMS monolitico (servidor por CEDIS).&#xA;Modernizacion TO BE: microservicios de Recepcion, Inventario y Despacho."/>

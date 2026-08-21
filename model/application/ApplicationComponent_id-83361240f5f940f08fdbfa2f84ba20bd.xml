@@ -1,0 +1,5 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="LIMS"
+    id="id-83361240f5f940f08fdbfa2f84ba20bd"
+    documentation="LIMS (Laboratory Information Management System). Sistema que gestiona el laboratorio de control de calidad.&#xA;&#xA;Funcionalidad:&#xA;- Registro y gestion de muestras&#xA;- Programacion y ejecucion de ensayos&#xA;- Resultados y certificado de analisis&#xA;- Estabilidades&#xA;Framework monolitico: LIMS comercial monolitico (BD unica).&#xA;Modernizacion TO BE: microservicios de Muestra, Ensayo y Resultado."/>

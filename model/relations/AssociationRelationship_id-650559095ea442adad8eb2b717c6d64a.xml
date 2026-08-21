@@ -1,0 +1,12 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="dispara"
+    id="id-650559095ea442adad8eb2b717c6d64a">
+  <source
+      xsi:type="archimate:Stakeholder"
+      href="Stakeholder_id-7f8f608e108346c48d95fb6f3a115a8d.xml#id-7f8f608e108346c48d95fb6f3a115a8d"/>
+  <target
+      xsi:type="archimate:ValueStream"
+      href="ValueStream_id-b9bcdee18bf0403f8eb6aa3f17832113.xml#id-b9bcdee18bf0403f8eb6aa3f17832113"/>
+</archimate:AssociationRelationship>

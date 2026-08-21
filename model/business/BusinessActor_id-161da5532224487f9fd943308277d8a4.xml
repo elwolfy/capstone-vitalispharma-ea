@@ -1,0 +1,5 @@
+<archimate:BusinessActor
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Planta Biologicos"
+    id="id-161da5532224487f9fd943308277d8a4"
+    documentation="Business Actor. Planta que fabrica productos biologicos con cadena de frio."/>

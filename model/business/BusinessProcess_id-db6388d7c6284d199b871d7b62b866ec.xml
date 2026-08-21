@@ -1,0 +1,5 @@
+<archimate:BusinessProcess
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Planificar Produccion"
+    id="id-db6388d7c6284d199b871d7b62b866ec"
+    documentation="Business Process. Programa las ordenes de fabricacion segun demanda y capacidad."/>

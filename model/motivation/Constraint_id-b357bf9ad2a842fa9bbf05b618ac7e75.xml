@@ -1,0 +1,5 @@
+<archimate:Constraint
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Presupuesto a 3 anios; regulaciones locales"
+    id="id-b357bf9ad2a842fa9bbf05b618ac7e75"
+    documentation="Constraint. Limitan el diseno el presupuesto (3 anios) y la normativa local por pais."/>

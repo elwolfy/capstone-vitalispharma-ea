@@ -1,0 +1,5 @@
+<archimate:ApplicationService
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Servicio Comercial y de Pedidos"
+    id="id-f1f41534bfe347eeb19055ffd4ca55a9"
+    documentation="Application Service. Gestiona clientes, pedidos y la relacion comercial."/>

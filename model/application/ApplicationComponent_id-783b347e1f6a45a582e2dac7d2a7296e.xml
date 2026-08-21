@@ -1,0 +1,5 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="ERP"
+    id="id-783b347e1f6a45a582e2dac7d2a7296e"
+    documentation="ERP (Enterprise Resource Planning). Sistema central que integra los procesos administrativos y de operaciones.&#xA;&#xA;Funcionalidad:&#xA;- Ordenes de compra y de venta&#xA;- Inventario y valorizacion&#xA;- Finanzas y contabilidad&#xA;- Compras, proveedores y RRHH&#xA;Framework monolitico: SAP ECC (monolito ABAP, base de datos unica).&#xA;Modernizacion TO BE: microservicios de Ordenes, Inventario, Finanzas y Compras."/>

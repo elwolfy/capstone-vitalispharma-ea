@@ -1,0 +1,5 @@
+<archimate:Requirement
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Integracion MES - WMS - ERP"
+    id="id-c3f6f50c4563469db8c82626a177aa93"
+    documentation="Requirement. Integrar los sistemas core de manufactura, almacen y ERP."/>

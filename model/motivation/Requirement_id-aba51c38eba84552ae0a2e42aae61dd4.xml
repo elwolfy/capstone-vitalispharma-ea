@@ -1,0 +1,5 @@
+<archimate:Requirement
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Serializacion y track &amp; trace (GS1)"
+    id="id-aba51c38eba84552ae0a2e42aae61dd4"
+    documentation="Requirement. Asignar identidad unica y rastrear con estandares GS1."/>
