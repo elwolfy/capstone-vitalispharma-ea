@@ -1,0 +1,12 @@
+<archimate:AssociationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="cubre"
+    id="id-b6adbfed9afe41e89597565b456ef627">
+  <source
+      xsi:type="archimate:Requirement"
+      href="Requirement_id-09f415036ea640ae8a07d9120d1cae81.xml#id-09f415036ea640ae8a07d9120d1cae81"/>
+  <target
+      xsi:type="archimate:Gap"
+      href="Gap_id-075c54d36d2b4c0ba56d60b4c9b38287.xml#id-075c54d36d2b4c0ba56d60b4c9b38287"/>
+</archimate:AssociationRelationship>
