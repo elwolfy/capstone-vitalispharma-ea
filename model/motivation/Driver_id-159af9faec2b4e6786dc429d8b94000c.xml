@@ -2,4 +2,4 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Cumplimiento regulatorio (serializacion, GMP/GDP)"
     id="id-159af9faec2b4e6786dc429d8b94000c"
-    documentation="Driver. Presion por cumplir GMP/GDP, serializacion (DSCSA/FMD) y trazabilidad."/>
+    documentation="Driver. Presion por cumplir GMP (Good Manufacturing Practices)/GDP (Good Distribution Practices), serializacion de unidades de medicamentos (DSCSA — Drug Supply Chain Security Act - EE. UU — FMD —Falsified Medicines Directive - Europa ) y trazabilidad del camino del medicamente unico."/>
