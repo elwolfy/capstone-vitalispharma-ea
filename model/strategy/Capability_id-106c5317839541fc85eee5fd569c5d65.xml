@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Control de la Producción"
     id="id-106c5317839541fc85eee5fd569c5d65"
-    documentation="Capability (Nivel 2 - ciclo de vida). Controla parametros y rendimiento de produccion."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Controla parametros y rendimiento de produccion.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="ALTO"/>
+</archimate:Capability>

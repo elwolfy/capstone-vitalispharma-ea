@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Coordinación Abastecimiento–Producción"
     id="id-3af08a818e5f434cb038d258430e84a3"
-    documentation="Capability (Nivel 2 - relacion). Coordina el abastecimiento con la produccion."/>
+    documentation="Capability (Nivel 2 - relacion). Coordina el abastecimiento con la produccion.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="ALTO"/>
+</archimate:Capability>

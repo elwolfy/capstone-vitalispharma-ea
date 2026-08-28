@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gestión de Activos"
     id="id-2c403c6e216a4e67bff320760e62201f"
-    documentation="Capability (Nivel 1). Objeto de negocio: Activo / Equipo. Gestiona el ciclo de vida completo de Activo / Equipo."/>
+    documentation="Capability (Nivel 1). Objeto de negocio: Activo / Equipo. Gestiona el ciclo de vida completo de Activo / Equipo.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="BAJO"/>
+</archimate:Capability>

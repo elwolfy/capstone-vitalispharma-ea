@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Coordinación Producción–Calidad"
     id="id-fe6a9cb335494a169854dc7f11072c22"
-    documentation="Capability (Nivel 2 - relacion). Coordina la produccion con el control de calidad."/>
+    documentation="Capability (Nivel 2 - relacion). Coordina la produccion con el control de calidad.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="ALTO"/>
+</archimate:Capability>

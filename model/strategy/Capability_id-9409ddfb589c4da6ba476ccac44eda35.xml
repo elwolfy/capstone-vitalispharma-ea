@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gestión de la Estrategia"
     id="id-9409ddfb589c4da6ba476ccac44eda35"
-    documentation="Capability (Nivel 1). Objeto de negocio: Plan Estratégico. Gestiona el ciclo de vida completo de Plan Estratégico."/>
+    documentation="Capability (Nivel 1). Objeto de negocio: Plan Estratégico. Gestiona el ciclo de vida completo de Plan Estratégico.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="BAJO"/>
+</archimate:Capability>

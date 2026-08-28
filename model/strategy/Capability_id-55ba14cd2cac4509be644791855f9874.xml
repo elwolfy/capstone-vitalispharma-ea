@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gestión del Registro Sanitario"
     id="id-55ba14cd2cac4509be644791855f9874"
-    documentation="Capability (Nivel 2 - ciclo de vida). Gestiona dossiers y registros sanitarios."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Gestiona dossiers y registros sanitarios.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="MEDIO"/>
+</archimate:Capability>

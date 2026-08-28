@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gestión del Inventario"
     id="id-3d1b232563a642efb4b901fd8875ccc3"
-    documentation="Capability (Nivel 2 - ciclo de vida). Controla el inventario multi-pais."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Controla el inventario multi-pais.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="ALTO"/>
+</archimate:Capability>

@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Coordinación Finanzas–Compras"
     id="id-652a7d93b9044da29b0382eebd193b95"
-    documentation="Capability (Nivel 2 - relacion). Coordina las finanzas con las compras."/>
+    documentation="Capability (Nivel 2 - relacion). Coordina las finanzas con las compras.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="BAJO"/>
+</archimate:Capability>

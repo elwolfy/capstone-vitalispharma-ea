@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Diseño y Formulación del Producto"
     id="id-1b36d9a224064bdb87f936dd4b88ede4"
-    documentation="Capability (Nivel 2 - ciclo de vida). Disena y formula el producto."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Disena y formula el producto.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="BAJO"/>
+</archimate:Capability>

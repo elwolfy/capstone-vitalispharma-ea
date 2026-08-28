@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Coordinación Cliente–Distribución"
     id="id-87d9239e8fb943df99f6c55885e4d2f6"
-    documentation="Capability (Nivel 2 - relacion). Coordina el cliente con la distribucion."/>
+    documentation="Capability (Nivel 2 - relacion). Coordina el cliente con la distribucion.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="MEDIO"/>
+</archimate:Capability>

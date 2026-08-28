@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Ejecución de Proyectos de I+D"
     id="id-3e69e106c684453a88a5157ba22a3043"
-    documentation="Capability (Nivel 2 - ciclo de vida). Ejecuta los proyectos de I+D."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Ejecuta los proyectos de I+D.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="BAJO"/>
+</archimate:Capability>

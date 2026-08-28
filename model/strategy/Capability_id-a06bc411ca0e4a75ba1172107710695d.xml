@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Desarrollo del Talento"
     id="id-a06bc411ca0e4a75ba1172107710695d"
-    documentation="Capability (Nivel 2 - ciclo de vida). Recluta, capacita y desarrolla al personal."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Recluta, capacita y desarrolla al personal.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="BAJO"/>
+</archimate:Capability>

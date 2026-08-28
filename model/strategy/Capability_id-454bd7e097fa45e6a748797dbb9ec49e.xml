@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gestión del Cliente"
     id="id-454bd7e097fa45e6a748797dbb9ec49e"
-    documentation="Capability (Nivel 1). Objeto de negocio: Cliente. Gestiona el ciclo de vida completo de Cliente."/>
+    documentation="Capability (Nivel 1). Objeto de negocio: Cliente. Gestiona el ciclo de vida completo de Cliente.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="MEDIO"/>
+</archimate:Capability>

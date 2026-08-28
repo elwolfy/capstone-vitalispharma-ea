@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Alineamiento Estrategia–Portafolio"
     id="id-c44ec9cc16bb43b89547bff0f3087e09"
-    documentation="Capability (Nivel 2 - relacion). Coordina la estrategia con el portafolio de productos."/>
+    documentation="Capability (Nivel 2 - relacion). Coordina la estrategia con el portafolio de productos.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="BAJO"/>
+</archimate:Capability>

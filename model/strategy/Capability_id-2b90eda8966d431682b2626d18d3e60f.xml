@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gestión de Auditorías e Inspecciones"
     id="id-2b90eda8966d431682b2626d18d3e60f"
-    documentation="Capability (Nivel 2 - ciclo de vida). Prepara y atiende auditorias e inspecciones."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Prepara y atiende auditorias e inspecciones.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="ALTO"/>
+</archimate:Capability>

@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Planificación del Talento"
     id="id-316d824a3e8447999944a6fa962c9976"
-    documentation="Capability (Nivel 2 - ciclo de vida). Planifica las necesidades de talento."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Planifica las necesidades de talento.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="BAJO"/>
+</archimate:Capability>

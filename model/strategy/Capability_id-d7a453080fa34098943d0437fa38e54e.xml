@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Verificación del Producto"
     id="id-d7a453080fa34098943d0437fa38e54e"
-    documentation="Capability (Nivel 2 - ciclo de vida). Verifica que el producto cumpla especificaciones."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Verifica que el producto cumpla especificaciones.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="MEDIO"/>
+</archimate:Capability>

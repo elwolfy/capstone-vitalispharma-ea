@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Planificación de I+D"
     id="id-bf0ce42e9ac144589c3e4350095ef378"
-    documentation="Capability (Nivel 2 - ciclo de vida). Planifica los proyectos de investigacion y desarrollo."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Planifica los proyectos de investigacion y desarrollo.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="BAJO"/>
+</archimate:Capability>

@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Operación de Servicios de TI"
     id="id-fc9bfb49868643e4a913829c5356caa2"
-    documentation="Capability (Nivel 2 - ciclo de vida). Opera plataformas y servicios de TI."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Opera plataformas y servicios de TI.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="MEDIO"/>
+</archimate:Capability>

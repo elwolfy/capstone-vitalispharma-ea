@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gestión de Retiros (Recall)"
     id="id-1eb50e4a7a1f484689f4cbb08431915d"
-    documentation="Capability (Nivel 2 - ciclo de vida). Ejecuta retiros de producto del mercado."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Ejecuta retiros de producto del mercado.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="ALTO"/>
+</archimate:Capability>

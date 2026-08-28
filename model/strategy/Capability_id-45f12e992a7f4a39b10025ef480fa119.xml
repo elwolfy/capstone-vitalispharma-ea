@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gestión de la Distribución"
     id="id-45f12e992a7f4a39b10025ef480fa119"
-    documentation="Capability (Nivel 1). Objeto de negocio: Envío. Gestiona el ciclo de vida completo de Envío."/>
+    documentation="Capability (Nivel 1). Objeto de negocio: Envío. Gestiona el ciclo de vida completo de Envío.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="ALTO"/>
+</archimate:Capability>

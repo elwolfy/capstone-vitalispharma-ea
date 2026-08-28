@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Servicio al Cliente"
     id="id-b39602ad1837423e8ad078db8d86d67a"
-    documentation="Capability (Nivel 2 - ciclo de vida). Atiende y da soporte a clientes."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Atiende y da soporte a clientes.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="BAJO"/>
+</archimate:Capability>

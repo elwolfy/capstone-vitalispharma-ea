@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Escalamiento y Transferencia"
     id="id-da3194f232c644aa99a66ac974979504"
-    documentation="Capability (Nivel 2 - ciclo de vida). Escala a produccion y transfiere tecnologia."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Escala a produccion y transfiere tecnologia.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="BAJO"/>
+</archimate:Capability>

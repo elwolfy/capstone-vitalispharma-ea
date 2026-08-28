@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Planificación de la Producción"
     id="id-6a28cd8663f741908cf005c9e4d4b85d"
-    documentation="Capability (Nivel 2 - ciclo de vida). Programa ordenes de fabricacion."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Programa ordenes de fabricacion.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="ALTO"/>
+</archimate:Capability>

@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gestión del Desarrollo de Producto"
     id="id-32781e6ea4154e3ab7e3b4b0a30c702a"
-    documentation="Capability (Nivel 1). Objeto de negocio: Especificación de Producto. Gestiona el ciclo de vida completo de Especificación de Producto."/>
+    documentation="Capability (Nivel 1). Objeto de negocio: Especificación de Producto. Gestiona el ciclo de vida completo de Especificación de Producto.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="MEDIO"/>
+</archimate:Capability>

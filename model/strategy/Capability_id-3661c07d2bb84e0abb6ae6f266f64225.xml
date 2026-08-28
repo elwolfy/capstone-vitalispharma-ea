@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Ejecución de la Producción (Fabricación)"
     id="id-3661c07d2bb84e0abb6ae6f266f64225"
-    documentation="Capability (Nivel 2 - ciclo de vida). Fabrica los lotes conforme a GMP."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Fabrica los lotes conforme a GMP.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="ALTO"/>
+</archimate:Capability>

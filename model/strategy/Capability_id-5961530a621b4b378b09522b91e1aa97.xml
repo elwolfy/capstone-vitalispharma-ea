@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gestión del Abastecimiento"
     id="id-5961530a621b4b378b09522b91e1aa97"
-    documentation="Capability (Nivel 1). Objeto de negocio: Plan de Abastecimiento. Gestiona el ciclo de vida completo de Plan de Abastecimiento."/>
+    documentation="Capability (Nivel 1). Objeto de negocio: Plan de Abastecimiento. Gestiona el ciclo de vida completo de Plan de Abastecimiento.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="ALTO"/>
+</archimate:Capability>

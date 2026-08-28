@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gestión del Presupuesto"
     id="id-3646b31e68184919b3722ae933946c1a"
-    documentation="Capability (Nivel 1). Objeto de negocio: Presupuesto. Gestiona el ciclo de vida completo de Presupuesto."/>
+    documentation="Capability (Nivel 1). Objeto de negocio: Presupuesto. Gestiona el ciclo de vida completo de Presupuesto.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="BAJO"/>
+</archimate:Capability>

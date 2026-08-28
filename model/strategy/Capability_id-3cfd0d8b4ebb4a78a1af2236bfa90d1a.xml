@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gestión de la Producción"
     id="id-3cfd0d8b4ebb4a78a1af2236bfa90d1a"
-    documentation="Capability (Nivel 1). Objeto de negocio: Lote de Producción. Gestiona el ciclo de vida completo de Lote de Producción."/>
+    documentation="Capability (Nivel 1). Objeto de negocio: Lote de Producción. Gestiona el ciclo de vida completo de Lote de Producción.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="ALTO"/>
+</archimate:Capability>

@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Planificación Financiera"
     id="id-90c64a8b943742daaa623657e17ce0b0"
-    documentation="Capability (Nivel 2 - ciclo de vida). Elabora el presupuesto y el plan financiero."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Elabora el presupuesto y el plan financiero.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="BAJO"/>
+</archimate:Capability>

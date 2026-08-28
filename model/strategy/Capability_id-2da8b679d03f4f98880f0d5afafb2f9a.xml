@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gestión de Almacenes (CEDIS)"
     id="id-2da8b679d03f4f98880f0d5afafb2f9a"
-    documentation="Capability (Nivel 2 - ciclo de vida). Opera almacenes y centros de distribucion."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Opera almacenes y centros de distribucion.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="ALTO"/>
+</archimate:Capability>

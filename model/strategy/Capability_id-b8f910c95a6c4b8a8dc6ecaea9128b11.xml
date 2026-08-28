@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Ejecución Financiera (Facturación)"
     id="id-b8f910c95a6c4b8a8dc6ecaea9128b11"
-    documentation="Capability (Nivel 2 - ciclo de vida). Ejecuta pagos, cobros y facturacion."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Ejecuta pagos, cobros y facturacion.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="MEDIO"/>
+</archimate:Capability>

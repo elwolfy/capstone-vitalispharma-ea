@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Planificación de la Demanda"
     id="id-d9f52f77cb524dd78168db15849620d6"
-    documentation="Capability (Nivel 2 - ciclo de vida). Pronostica la demanda."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Pronostica la demanda.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="ALTO"/>
+</archimate:Capability>

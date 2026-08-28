@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gestión de Compras"
     id="id-de01fc451ef448bc844dfbbb4c38aa0c"
-    documentation="Capability (Nivel 2 - ciclo de vida). Ejecuta compras y contratos."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Ejecuta compras y contratos.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="MEDIO"/>
+</archimate:Capability>

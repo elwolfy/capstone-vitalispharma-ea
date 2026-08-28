@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Reporte Regulatorio"
     id="id-a1135366a8314be79837abff2d18aaa7"
-    documentation="Capability (Nivel 2 - ciclo de vida). Elabora y presenta reportes a las autoridades."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Elabora y presenta reportes a las autoridades.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="ALTO"/>
+</archimate:Capability>

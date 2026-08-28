@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gestión de Datos Maestros"
     id="id-c6bcffc13208456d80e51a72f523916f"
-    documentation="Capability (Nivel 2 - ciclo de vida). Administra los datos maestros unicos."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Administra los datos maestros unicos.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="ALTO"/>
+</archimate:Capability>

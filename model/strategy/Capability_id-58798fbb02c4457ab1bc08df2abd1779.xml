@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gestión de Desviaciones y CAPA"
     id="id-58798fbb02c4457ab1bc08df2abd1779"
-    documentation="Capability (Nivel 2 - ciclo de vida). Gestiona desviaciones y acciones CAPA."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Gestiona desviaciones y acciones CAPA.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="MEDIO"/>
+</archimate:Capability>

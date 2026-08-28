@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Calificación de Proveedores"
     id="id-19f585e963ad486d82d4138baf9b24e1"
-    documentation="Capability (Nivel 2 - ciclo de vida). Evalua y califica proveedores."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Evalua y califica proveedores.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="BAJO"/>
+</archimate:Capability>

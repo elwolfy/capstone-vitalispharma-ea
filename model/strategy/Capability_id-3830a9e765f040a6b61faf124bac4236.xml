@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Serialización del Producto"
     id="id-3830a9e765f040a6b61faf124bac4236"
-    documentation="Capability (Nivel 2 - ciclo de vida). Asigna identidad unica (GS1) a cada unidad."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Asigna identidad unica (GS1) a cada unidad.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="ALTO"/>
+</archimate:Capability>

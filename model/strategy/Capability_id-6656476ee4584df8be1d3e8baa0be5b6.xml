@@ -2,4 +2,8 @@
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Control Financiero"
     id="id-6656476ee4584df8be1d3e8baa0be5b6"
-    documentation="Capability (Nivel 2 - ciclo de vida). Controla y reporta la ejecucion financiera."/>
+    documentation="Capability (Nivel 2 - ciclo de vida). Controla y reporta la ejecucion financiera.">
+  <properties
+      key="Impacto Modernizacion Core"
+      value="BAJO"/>
+</archimate:Capability>
