@@ -1,0 +1,5 @@
+<archimate:WorkPackage
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="WMS/TMS y liberación por excepción (QA)"
+    id="id-8f826d78e67343eb8aed9e26271822e2"
+    documentation="Habilita liberación ágil. Depende de calidad de datos e integración."/>

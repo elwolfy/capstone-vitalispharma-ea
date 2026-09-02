@@ -1,0 +1,5 @@
+<archimate:WorkPackage
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Migración y saneamiento de maestros"
+    id="id-d78c58e664b14d8e8dc6896c59c5b170"
+    documentation="Limpia y migra los datos duplicados por país. VA antes de consumir los maestros aguas abajo."/>

@@ -1,0 +1,5 @@
+<archimate:WorkPackage
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Track &amp; Trace y genealogía de lote"
+    id="id-f89251af844b49aaad155f6bb2a0b565"
+    documentation="Registra la genealogía padre-hijo. Depende de los seriales y de la integración."/>

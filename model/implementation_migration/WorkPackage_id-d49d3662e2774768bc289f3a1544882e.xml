@@ -1,0 +1,5 @@
+<archimate:WorkPackage
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Gobierno de arquitectura y criterios de aceptación (QA)"
+    id="id-d49d3662e2774768bc289f3a1544882e"
+    documentation="Define principios, estándares y criterios de aceptación. VA PRIMERO: sin reglas de calidad y gobierno, ningún entregable posterior puede evaluarse ni aprobarse."/>

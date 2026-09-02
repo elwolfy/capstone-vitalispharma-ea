@@ -1,0 +1,5 @@
+<archimate:Plateau
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Arquitectura VitalisPharma Actual (Línea base AS-IS)"
+    id="id-d6c5744ce0e34077b8a6878e231508e4"
+    documentation="Plateau de PARTIDA. Estado actual: sistemas fragmentados por país, integraciones punto a punto, sin datos maestros ni serialización consolidada. Es la referencia contra la que se mide la brecha."/>

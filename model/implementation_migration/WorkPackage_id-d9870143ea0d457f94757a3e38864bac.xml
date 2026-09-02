@@ -1,0 +1,5 @@
+<archimate:WorkPackage
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Monitoreo, alertas y trazabilidad de frío"
+    id="id-d9870143ea0d457f94757a3e38864bac"
+    documentation="Correlaciona temperatura con lote. Depende de la trazabilidad (D) y del dato de lote (B)."/>

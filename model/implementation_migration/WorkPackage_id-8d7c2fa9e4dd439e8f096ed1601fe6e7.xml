@@ -1,0 +1,5 @@
+<archimate:WorkPackage
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="iPaaS / API Gateway y bus de eventos"
+    id="id-8d7c2fa9e4dd439e8f096ed1601fe6e7"
+    documentation="Establece el backbone de integración. VA JUNTO A B (muy temprano): es lo que distribuye los maestros y elimina el punto a punto."/>

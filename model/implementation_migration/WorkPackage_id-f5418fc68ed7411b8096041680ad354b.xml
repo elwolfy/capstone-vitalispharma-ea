@@ -1,0 +1,5 @@
+<archimate:WorkPackage
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Plataforma de datos (Lakehouse) y BI unificado"
+    id="id-f5418fc68ed7411b8096041680ad354b"
+    documentation="Unifica la analítica. VA DESPUÉS de que los datos estén integrados y poblados."/>

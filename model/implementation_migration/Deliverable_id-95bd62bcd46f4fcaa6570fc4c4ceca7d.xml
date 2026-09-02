@@ -1,0 +1,5 @@
+<archimate:Deliverable
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="MDM operativo + Capa de Integración"
+    id="id-95bd62bcd46f4fcaa6570fc4c4ceca7d"
+    documentation="Entregable de la Fase 1. Plataforma MDM en operación y capa de integración API-led/microservicios que distribuye los maestros y sustituye el punto a punto. Realiza el plateau de la Fase 1."/>

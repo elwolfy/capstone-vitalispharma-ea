@@ -1,0 +1,5 @@
+<archimate:Grouping
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="F. Modernización ERP y Aplicaciones Core"
+    id="id-b2d4db0e5bba40bda42d756c0e4d3ad4"
+    documentation="GRUPO F — modernización del core. Puede solaparse con D/E, pero se secuencia tras B para que el ERP y el core consuman los maestros únicos."/>

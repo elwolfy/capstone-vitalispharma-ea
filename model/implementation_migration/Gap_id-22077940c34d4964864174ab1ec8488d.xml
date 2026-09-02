@@ -1,0 +1,5 @@
+<archimate:Gap
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Brecha de datos maestros e integración"
+    id="id-22077940c34d4964864174ab1ec8488d"
+    documentation="GAP estructural (causa raíz). No existen datos maestros únicos (producto, lote, cliente, ubicación) y las integraciones son punto a punto y frágiles entre MES, WMS y ERP. Impide trazabilidad, consistencia y liberación ágil. Impulsa la Fase 1."/>

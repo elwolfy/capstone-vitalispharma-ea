@@ -1,0 +1,5 @@
+<archimate:WorkPackage
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="ERP armonizado multi-país (template único)"
+    id="id-10bc9074767249bba3d6ee9a02fecc7d"
+    documentation="Unifica el ERP. VA DESPUÉS de MDM: el ERP armonizado debe consumir los maestros únicos, no crear silos nuevos."/>

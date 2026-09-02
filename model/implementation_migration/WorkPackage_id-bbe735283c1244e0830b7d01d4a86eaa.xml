@@ -1,0 +1,5 @@
+<archimate:WorkPackage
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Modelo de datos maestros (producto, lote, cliente, ubicación)"
+    id="id-bbe735283c1244e0830b7d01d4a86eaa"
+    documentation="Crea el modelo único de maestros. VA TEMPRANO: es el cimiento de datos del que dependen serialización, frío y analítica."/>

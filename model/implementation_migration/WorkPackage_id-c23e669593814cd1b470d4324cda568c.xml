@@ -1,0 +1,5 @@
+<archimate:WorkPackage
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Integración de telemetría al Lakehouse"
+    id="id-c23e669593814cd1b470d4324cda568c"
+    documentation="Persiste la telemetría para analítica. Requiere la plataforma de datos disponible."/>

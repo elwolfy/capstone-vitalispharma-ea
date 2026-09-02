@@ -1,0 +1,5 @@
+<archimate:Gap
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Brecha de disponibilidad y escalabilidad"
+    id="id-ba90340338c648bd93fdced64466504a"
+    documentation="GAP de sostenibilidad. Infraestructura heredada por país, poco escalable, sin analítica unificada ni continuidad robusta. Se cierra al alcanzar la arquitectura objetivo."/>

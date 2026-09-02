@@ -1,0 +1,5 @@
+<archimate:Grouping
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Hoja de Ruta de Implementación 2026–2029 (referencial)"
+    id="id-2f62d2e297f4487096a808441d0592a4"
+    documentation="Contenedor de la hoja de ruta. Agrupa los paquetes de trabajo (A–H) que realizan las fases. El orden A→H respeta las dependencias: primero gobernanza y datos, luego integración, después trazabilidad, frío, modernización, analítica y, de forma continua, operación."/>

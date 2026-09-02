@@ -1,0 +1,5 @@
+<archimate:Grouping
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="C. Capa de Integración API-led / Microservicios"
+    id="id-60ac216323c547108c955ae4805be63b"
+    documentation="GRUPO C — habilitador transversal. Va casi primero (con B) porque la integración API-led es el vehículo que distribuye los datos maestros y sobre el que se conectan todas las capacidades siguientes."/>

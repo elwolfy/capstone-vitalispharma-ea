@@ -1,0 +1,5 @@
+<archimate:WorkPackage
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Modernización MES / LIMS / QMS"
+    id="id-aac390fbb5684b199202477ae9a3bcfe"
+    documentation="Moderniza el core misional. Se integra por la capa API-led ya disponible."/>

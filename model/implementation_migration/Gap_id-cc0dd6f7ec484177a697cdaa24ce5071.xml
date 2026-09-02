@@ -1,0 +1,5 @@
+<archimate:Gap
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Brecha de cadena de frío y calidad"
+    id="id-cc0dd6f7ec484177a697cdaa24ce5071"
+    documentation="GAP operativo. La cadena de frío se gestiona de forma reactiva (sin IoT integrado) y la liberación de calidad es manual y lenta, generando mermas. Impulsa la Fase 3."/>

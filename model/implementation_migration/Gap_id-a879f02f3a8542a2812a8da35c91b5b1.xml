@@ -1,0 +1,5 @@
+<archimate:Gap
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Brecha de trazabilidad y serialización E2E"
+    id="id-a879f02f3a8542a2812a8da35c91b5b1"
+    documentation="GAP regulatorio y de negocio. La serialización no está consolidada y la genealogía de lote es incompleta, lo que hace lentos los recalls y arriesga el cumplimiento (DSCSA/FMD). Impulsa la Fase 2."/>

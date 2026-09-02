@@ -1,0 +1,5 @@
+<archimate:WorkPackage
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Plataforma IoT y sensores de temperatura"
+    id="id-5a4944ec28dd43f28f7843b0b7b94fe9"
+    documentation="Instrumenta plantas y CEDIS. VA DESPUÉS de la integración: la telemetría debe ingresar por la capa de integración y persistirse."/>

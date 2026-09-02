@@ -2,7 +2,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="B - Capacidades de Negocio L1-L2 (VitalisPharma)"
-    id="id-7a201d333aa0403cba0a4c4c29e1486b">
+    id="id-7a201d333aa0403cba0a4c4c29e1486b"
+    documentation="MECE — Mutualmente exclusivo y Colectivamente Exahuastivo&#xD;&#xA;&#xD;&#xA;McKinsey&#xD;&#xA;Accenture&#xD;&#xA;etc.">
   <children
       xsi:type="archimate:DiagramModelNote"
       id="id-c54bbbd6207540f2a52263ac656970ae"

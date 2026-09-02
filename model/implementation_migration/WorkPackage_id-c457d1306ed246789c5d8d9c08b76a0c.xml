@@ -1,0 +1,5 @@
+<archimate:WorkPackage
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Plataforma de serialización (GS1 / EPCIS)"
+    id="id-c457d1306ed246789c5d8d9c08b76a0c"
+    documentation="Genera y agrega seriales. VA DESPUÉS de MDM+integración: necesita el maestro de producto/lote y el bus de eventos."/>

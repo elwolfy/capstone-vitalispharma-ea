@@ -1,0 +1,5 @@
+<archimate:WorkPackage
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Continuidad y DR de servicios críticos"
+    id="id-72036fa74a07472884aa5ace8d06ba84"
+    documentation="Protege serialización y frío. Se implanta cuando los servicios críticos ya operan."/>

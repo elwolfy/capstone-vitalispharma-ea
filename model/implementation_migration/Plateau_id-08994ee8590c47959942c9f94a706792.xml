@@ -1,0 +1,5 @@
+<archimate:Plateau
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Fase 3 — Cadena de Frío (IoT), Calidad y Analítica"
+    id="id-08994ee8590c47959942c9f94a706792"
+    documentation="Plateau de TRANSICIÓN 3. IoT de cadena de frío, liberación por excepción y analítica (lakehouse). VA TERCERO porque CONSUME los datos integrados y la trazabilidad previos para correlacionar temperatura con lote y alimentar los KPIs; la analítica requiere la plataforma de datos ya poblada."/>

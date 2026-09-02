@@ -1,0 +1,5 @@
+<archimate:Plateau
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Fase 2 — Serialización y Track &amp; Trace E2E"
+    id="id-10e586e2bcfd41d1a40bf287c7a2bae4"
+    documentation="Plateau de TRANSICIÓN 2. Serialización (GS1/EPCIS), track &amp; trace y genealogía de lote. VA SEGUNDO porque DEPENDE de los maestros (producto/lote) y de la integración de la Fase 1 para registrar eventos extremo a extremo; además atiende el driver regulatorio de mayor prioridad."/>

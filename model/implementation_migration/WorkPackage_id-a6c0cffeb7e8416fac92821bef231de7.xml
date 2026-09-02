@@ -1,0 +1,5 @@
+<archimate:WorkPackage
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Descomposición de monolitos a microservicios"
+    id="id-a6c0cffeb7e8416fac92821bef231de7"
+    documentation="Moderniza el core hacia servicios. Habilita escalar e integrar por fases."/>

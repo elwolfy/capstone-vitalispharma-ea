@@ -1,0 +1,5 @@
+<archimate:Grouping
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="B. Datos Maestros (MDM)"
+    id="id-50a6a95b48254851864895be84380d68"
+    documentation="GRUPO B — cimiento de datos. Va casi primero porque el dato maestro único es la causa raíz: habilita la consistencia de todas las capacidades siguientes."/>

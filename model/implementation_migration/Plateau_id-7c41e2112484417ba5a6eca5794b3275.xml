@@ -1,0 +1,5 @@
+<archimate:Plateau
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Fase 1 — Datos Maestros (MDM) e Integración API-led"
+    id="id-7c41e2112484417ba5a6eca5794b3275"
+    documentation="Plateau de TRANSICIÓN 1. Establece el cimiento: MDM (single source) y la capa de integración API-led que reemplaza las conexiones punto a punto. VA PRIMERO porque es la causa raíz: sin datos maestros ni integración gobernada, ninguna capacidad posterior es trazable ni consistente."/>
