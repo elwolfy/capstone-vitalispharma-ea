@@ -1,4 +1,5 @@
 <archimate:ApplicationComponent
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="BI unificado"
-    id="id-1635610e992e4f7ea4983874e1e6ad2f"/>
+    id="id-1635610e992e4f7ea4983874e1e6ad2f"
+    documentation="Analítica y reportes sobre datos consolidados."/>

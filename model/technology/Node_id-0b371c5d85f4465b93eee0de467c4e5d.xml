@@ -1,4 +1,5 @@
 <archimate:Node
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Plataforma IoT"
-    id="id-0b371c5d85f4465b93eee0de467c4e5d"/>
+    id="id-0b371c5d85f4465b93eee0de467c4e5d"
+    documentation="Ingesta la telemetría de los gateways; soporta IoT de cadena de frío."/>

@@ -1,4 +1,5 @@
 <archimate:ApplicationComponent
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Track &amp; Trace"
-    id="id-efe690fd5ac84afe9b614cb543742320"/>
+    id="id-efe690fd5ac84afe9b614cb543742320"
+    documentation="Repositorio de eventos de trazabilidad y genealogía de lote."/>

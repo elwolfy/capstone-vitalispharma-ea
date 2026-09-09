@@ -1,4 +1,5 @@
 <archimate:Device
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gateway IoT — Centro de Distribucion (CEDIS)"
-    id="id-aa7222d7ba2347aaa1508003146bbbf4"/>
+    id="id-aa7222d7ba2347aaa1508003146bbbf4"
+    documentation="Concentra las lecturas de los sensores y las envía a la plataforma IoT."/>

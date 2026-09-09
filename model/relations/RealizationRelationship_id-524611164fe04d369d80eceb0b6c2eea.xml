@@ -1,0 +1,14 @@
+<archimate:RealizationRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    id="id-524611164fe04d369d80eceb0b6c2eea">
+  <properties
+      key="cpstechScript"
+      value="08_roadmap"/>
+  <source
+      xsi:type="archimate:WorkPackage"
+      href="WorkPackage_id-72036fa74a07472884aa5ace8d06ba84.xml#id-72036fa74a07472884aa5ace8d06ba84"/>
+  <target
+      xsi:type="archimate:Node"
+      href="Node_id-fc2f510ed6404367bc1c0e0f2aa7d122.xml#id-fc2f510ed6404367bc1c0e0f2aa7d122"/>
+</archimate:RealizationRelationship>

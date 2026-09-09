@@ -1,4 +1,5 @@
 <archimate:Node
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Observabilidad y DR"
-    id="id-fc2f510ed6404367bc1c0e0f2aa7d122"/>
+    id="id-fc2f510ed6404367bc1c0e0f2aa7d122"
+    documentation="Monitoreo y recuperación ante desastres de servicios críticos."/>

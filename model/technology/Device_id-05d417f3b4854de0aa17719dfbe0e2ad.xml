@@ -1,4 +1,5 @@
 <archimate:Device
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Sensores de Temperatura — Planta Solidos Orales"
-    id="id-05d417f3b4854de0aa17719dfbe0e2ad"/>
+    id="id-05d417f3b4854de0aa17719dfbe0e2ad"
+    documentation="Miden la temperatura de la cadena de frío."/>

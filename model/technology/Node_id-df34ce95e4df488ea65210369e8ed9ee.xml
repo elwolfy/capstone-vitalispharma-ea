@@ -1,4 +1,5 @@
 <archimate:Node
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="iPaaS / API Gateway"
-    id="id-df34ce95e4df488ea65210369e8ed9ee"/>
+    id="id-df34ce95e4df488ea65210369e8ed9ee"
+    documentation="Publica y gobierna las APIs y eventos de la capa de integración."/>

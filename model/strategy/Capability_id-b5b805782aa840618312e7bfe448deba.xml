@@ -1,4 +1,5 @@
 <archimate:Capability
     xmlns:archimate="http://www.archimatetool.com/archimate"
     name="Gobierno de Datos Maestros"
-    id="id-b5b805782aa840618312e7bfe448deba"/>
+    id="id-b5b805782aa840618312e7bfe448deba"
+    documentation="Capacidad nueva que gobierna producto, lote, cliente y ubicación; realizada por el MDM."/>

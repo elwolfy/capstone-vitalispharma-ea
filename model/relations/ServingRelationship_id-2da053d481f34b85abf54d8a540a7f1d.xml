@@ -1,0 +1,14 @@
+<archimate:ServingRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    id="id-2da053d481f34b85abf54d8a540a7f1d">
+  <properties
+      key="cpstechScript"
+      value="07_tec_tobe"/>
+  <source
+      xsi:type="archimate:Node"
+      href="Node_id-4f8abb5fe292426b8db27ca91b8a80fd.xml#id-4f8abb5fe292426b8db27ca91b8a80fd"/>
+  <target
+      xsi:type="archimate:ApplicationComponent"
+      href="ApplicationComponent_id-1635610e992e4f7ea4983874e1e6ad2f.xml#id-1635610e992e4f7ea4983874e1e6ad2f"/>
+</archimate:ServingRelationship>

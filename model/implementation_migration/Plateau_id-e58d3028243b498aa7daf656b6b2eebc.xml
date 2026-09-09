@@ -1,0 +1,9 @@
+<archimate:Plateau
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Arquitectura VitalisPharma Actual (Línea base AS-IS)"
+    id="id-e58d3028243b498aa7daf656b6b2eebc"
+    documentation="Plateau de partida: sistemas fragmentados, integraciones punto a punto, sin datos maestros ni serialización.">
+  <properties
+      key="cpstechScript"
+      value="08_roadmap"/>
+</archimate:Plateau>
